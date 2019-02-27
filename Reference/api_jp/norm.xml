@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<root>
+
+<name>norm()</name>
+
+<category>Math</category>
+
+<subcategory>Calculation</subcategory>
+
+<type></type>
+
+<example>
+<code><![CDATA[
+value = 20
+n = norm(value, 0, 50)
+print(n)  # Prints "0.4000000059604645"
+]]></code>
+</example>
+
+<example>
+<code><![CDATA[
+value = -10
+n = norm(value, 0, 100)
+print(n)  # Prints "-0.10000000149011612"
+]]></code>
+</example>
+
+<description><![CDATA[
+Normalizes a number from another range into a value between 0 and 1. Identical to <b>map(value, low, high, 0, 1)</b>.<br/>
+<br/>
+Numbers outside of the range are not clamped to 0 and 1, because out-of-range values are often intentional and useful.  (See the second example above.)
+]]></description>
+
+<syntax>
+norm(<c>value</c>, <c>start</c>, <c>stop</c>)
+</syntax>
+
+<parameter>
+<label>value</label>
+<description><![CDATA[float: the incoming value to be converted]]></description>
+</parameter>
+
+<parameter>
+<label>start</label>
+<description><![CDATA[float: lower bound of the value's current range]]></description>
+</parameter>
+
+<parameter>
+<label>stop</label>
+<description><![CDATA[float: upper bound of the value's current range]]></description>
+</parameter>
+
+<related>map</related>
+<related>PVector_lerp</related>
+
+</root>

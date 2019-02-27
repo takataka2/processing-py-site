@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>.insert()</name>
+
+<category>Data</category>
+
+<subcategory>List Methods</subcategory>
+
+<usage></usage>
+
+<example>
+<code><![CDATA[
+letters = ['b', 'c', 'd']
+print(letters) # Prints ['b', 'c', 'd']
+letters.insert(0, 'a')
+print(letters) # Prints ['a', 'b', 'c', 'd']
+]]></code>
+</example>
+
+<description><![CDATA[
+Insert an item into a list at a given index.
+]]></description>
+
+<syntax>
+<c>a</c>.insert(<c>i</c>, <c>x</c>)
+</syntax>
+
+<parameter>
+<label>a</label>
+<description>The list to insert into.</description>
+</parameter>
+
+<parameter>
+<label>i</label>
+<description>The index of the element before which to insert.</description>
+</parameter>
+
+<parameter>
+<label>x</label>
+<description>The item to insert.</description>
+</parameter>
+
+<returns></returns>
+
+<related>list_append</related>
+<related>list_pop</related>
+<related>list_reverse</related>
+<related>list_index</related>
+
+<availability>1.0</availability>
+
+<type></type>
+
+<partof>PYDE</partof>
+
+</root>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+
+<name>removeRow()</name>
+
+<category>Table</category>
+
+<subcategory>Method</subcategory>
+
+<type>method</type>
+
+<example>
+	<noimage />
+<code><![CDATA[
+table = Table()
+table.addColumn("name")
+table.addColumn("type")
+newRow = table.addRow()
+newRow.setString("name", "Lion")
+newRow.setString("type", "Mammal")
+print(table.getRowCount())  # Prints 1
+table.removeRow(0)            # Removes the first row
+print(table.getRowCount())  # Prints 0
+]]></code>
+</example>
+
+<description><![CDATA[
+Removes a row from a <b>Table</b> object.
+]]></description>
+
+<syntax>
+.removeRow(row)
+</syntax>
+
+<parameter>
+<label>row</label>
+<description><![CDATA[int: ID number of the row to remove]]></description>
+</parameter>
+
+<related>Table_addRow</related>
+<related>Table_clearRows</related>
+
+</root>

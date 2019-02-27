@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+
+<name>getString()</name>
+
+<category>TableRow</category>
+
+<subcategory>Method</subcategory>
+
+<type>method</type>
+
+<example>
+	<noimage />
+<code><![CDATA[
+table = Table()
+
+table.addColumn("number", Table.INT)
+table.addColumn("mass", Table.FLOAT)
+table.addColumn("name", Table.STRING)
+
+row = table.addRow()
+row.setInt("number", 8)
+row.setFloat("mass", 15.9994)
+row.setString("name", "Oxygen")
+
+print(row.getInt("number"))            # Prints 8
+print(nf(row.getFloat("mass"), 2, 4))  # Prints 15.9994
+print(row.getString("name"))           # Prints "Oxygen"
+]]></code>
+</example>
+
+<description><![CDATA[
+Retrieves a String value from the <b>TableRow</b>'s specified column. The column may be specified by either its ID or title.
+]]></description>
+
+<syntax>
+.getString(<c>column</c>)
+.getString(<c>columnName</c>)
+</syntax>
+
+<parameter>
+<label>column</label>
+<description><![CDATA[int: ID number of the column to reference]]></description>
+</parameter>
+
+<parameter>
+<label>columnName</label>
+<description><![CDATA[String: title of the column to reference]]></description>
+</parameter>
+
+<related>XML_getInt</related>
+<related>XML_getFloat</related>
+
+</root>

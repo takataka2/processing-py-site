@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>break</name>
+
+<category>Control</category>
+
+<subcategory>Conditionals</subcategory>
+
+<usage>Web &amp; Application</usage>
+
+<example>
+<code><![CDATA[
+for i in range(5):
+    if i == 2: 
+        break
+print(i) # Prints 2
+]]></code>
+</example>
+
+<description><![CDATA[
+Ends the execution of a structure such as <b>for</b>, or <b>while</b> and jumps to the next statement after.
+]]></description>
+
+<syntax>
+	for i in xrange(10):
+	    statements
+	    if (condition):
+	        <b>break</b>
+
+	while (i &lt; 10):
+	    statements
+	    if (condition):
+	        <b>break</b>
+</syntax>
+
+
+<returns></returns>
+
+<related>for</related>
+<related>while</related>
+
+<availability>1.0</availability>
+
+<type>Keyword</type>
+
+<partof>Python</partof>
+
+<level>extended</level>
+
+</root>

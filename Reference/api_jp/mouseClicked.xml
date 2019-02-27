@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>mouseClicked()</name>
+
+<category>Input</category>
+
+<subcategory>Mouse</subcategory>
+
+<type>p5function</type>
+
+<example>
+<noimage />
+<notest />
+<code><![CDATA[
+# Click within the image to change 
+# the value of the rectangle after
+# after the mouse has been clicked
+
+value = 0
+
+def draw(): 
+    fill(value)
+    rect(25, 25, 50, 50)
+
+def mouseClicked(): 
+    global value
+    if value == 0:
+        value = 255
+    else:
+        value = 0
+]]></code>
+</example>
+
+<description><![CDATA[
+The <b>mouseClicked()</b> function is called <i>after</i> a mouse button has been pressed and then released.
+<br/><br/>
+Mouse and keyboard events only work when a program has <b>draw()</b>. Without <b>draw()</b>, the code is only run once and then stops listening for events.
+]]></description>
+
+<syntax>
+def mouseClicked():
+    statements
+
+def mouseClicked(event):
+    statements
+</syntax>
+
+<parameter>
+	<label>event</label>
+	<description><![CDATA[MouseEvent: the MouseEvent]]></description>
+</parameter>
+
+<related>mouseX</related>
+<related>mouseY</related>
+<related>pmouseX</related>
+<related>pmouseY</related>
+<related>mousePressed_var</related>
+<related>mousePressed</related>
+<related>mouseReleased</related>
+<related>mouseMoved</related>
+<related>mouseDragged</related>
+<related>mouseButton</related>
+<related>mouseWheel</related>
+
+</root>

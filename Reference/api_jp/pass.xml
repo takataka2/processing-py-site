@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>pass</name>
+
+<category>Structure</category>
+
+<subcategory></subcategory>
+
+<usage></usage>
+
+<example>
+<noimage />
+<code><![CDATA[
+# This function does nothing.
+def doNothing():
+  pass
+# Create an empty class
+class Foo(object):
+  pass
+]]></code>
+</example>
+
+<description><![CDATA[
+When pass is executed, nothing happens. Pass is useful when a statement is required syntactically -- as in the above function doNothing.
+]]></description>
+
+<syntax>
+<c>pass</c>
+</syntax>
+
+<parameter>
+<label></label>
+<description></description>
+</parameter>
+
+<returns></returns>
+
+
+<availability>1.0</availability>
+
+<type>Keyword</type>
+
+<partof>PYDE</partof>
+
+</root>

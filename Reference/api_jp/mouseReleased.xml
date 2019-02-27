@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>mouseReleased()</name>
+
+<category>Input</category>
+
+<subcategory>Mouse</subcategory>
+
+<type></type>
+
+<example>
+<notest />
+<image />
+<code><![CDATA[
+# Click within the image to change 
+# the value of the rectangle
+
+value = 0
+
+def draw(): 
+    fill(value)
+    rect(25, 25, 50, 50)
+
+def mouseReleased(): 
+    global value
+    if value == 0:
+        value = 255
+    else:
+        value = 0
+]]></code>
+</example>
+
+<description><![CDATA[
+The <b>mouseReleased()</b> function is called every time a mouse button is released.
+<br/><br/>
+Mouse and keyboard events only work when a program has <b>draw()</b>. Without <b>draw()</b>, the code is only run once and then stops listening for events.
+]]></description>
+
+<syntax>
+mouseReleased()
+mouseReleased(event)
+</syntax>
+
+<related>mouseX</related>
+<related>mouseY</related>
+<related>pmouseX</related>
+<related>pmouseY</related>
+<related>mousePressed_var</related>
+<related>mousePressed</related>
+<related>mouseClicked</related>
+<related>mouseMoved</related>
+<related>mouseDragged</related>
+<related>mouseButton</related>
+<related>mouseWheel</related>
+
+</root>

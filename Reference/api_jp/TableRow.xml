@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+
+<name>TableRow</name>
+
+<category>Data</category>
+
+<subcategory>Composite</subcategory>
+
+<type></type>
+
+<example>
+<code><![CDATA[
+def setup():
+    table = Table()
+
+    table.addColumn("number", Table.INT)
+    table.addColumn("mass", Table.FLOAT)
+    table.addColumn("name", Table.STRING)
+
+    row = table.addRow()
+    row.setInt("number", 8)
+    row.setFloat("mass", 15.9994)
+    row.setString("name", "Oxygen")
+
+    print(row.getInt("number"))   # Prints 8
+    print(nf(row.getFloat("mass"), 2, 4))  # Prints 15.9994
+    print(row.getString("name"))  # Prints "Oxygen
+]]></code>
+</example>
+
+<description><![CDATA[
+A <b>TableRow</b> object represents a single row of data values, stored in columns, from a table.
+]]></description>
+
+
+<type>class</type>
+
+<related>Table</related>
+<related>Table_addRow</related>
+<related>Table_removeRow</related>
+<related>Table_clearRows</related>
+<related>Table_getRow</related>
+<related>Table_rows</related>
+
+
+</root>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+
+<name>normalize()</name>
+
+<category>PVector</category>
+
+<subcategory>Method</subcategory>
+
+<type></type>
+
+<example>
+<code><![CDATA[
+v = PVector(10, 20, 2)
+v.normalize()
+print(v)  # Prints "[ 0.4454354, 0.8908708, 0.089087084 ]"
+]]></code>
+</example>
+
+<description><![CDATA[
+Normalize the vector to length 1 (make it a unit vector).
+]]></description>
+
+<syntax>
+.normalize()
+.normalize(target)
+</syntax>
+
+<parameter>
+<label>target</label>
+<description><![CDATA[PVector: Set to null to create a new vector]]></description>
+</parameter>
+
+
+</root>

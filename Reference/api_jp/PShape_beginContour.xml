@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>beginContour()</name>
+
+<!-- unsupported_modes>js</unsupported_modes -->
+<!-- js_mode><description>This part of the Processing API is not supported in JavaScript mode</description></js_mode -->
+
+<category>PShape</category>
+
+<subcategory>Method</subcategory>
+
+<type></type>
+
+<example>
+<image />
+<code><![CDATA[
+def setup():
+    size(100, 100, P2D)
+    # Make a shape
+    global s
+    s = createShape()
+    s.beginShape()
+    s.noStroke()
+    # Exterior part of shape, clockwise winding
+    s.vertex(-50, -50)
+    s.vertex(50, -50)
+    s.vertex(50, 50)
+    s.vertex(-50, 50)
+    # Interior part of shape, counter-clockwise winding
+    s.beginContour()
+    s.vertex(-20, -20)
+    s.vertex(-20, 20)
+    s.vertex(20, 20)
+    s.vertex(20, -20)
+    s.endContour()
+    # Finish off shape
+    s.endShape()
+
+def draw():
+    background(52)
+    translate(width / 2, height / 2)
+    s.rotate(0.01)
+    shape(s)
+]]></code>
+</example>
+
+<description><![CDATA[
+Use the <b>beginContour()</b> and <b>endContour()</b> function to create negative shapes within shapes such as the center of the letter 'O'. <b>beginContour()</b> begins recording vertices for the shape and <b>endContour()</b> stops recording. The vertices that define a negative shape must "wind" in the opposite direction from the exterior shape. First draw vertices for the exterior shape in clockwise order, then for internal shapes, draw vertices counterclockwise.<br>
+<br>
+These functions can only be used within a <b>beginShape()</b>/<b>endShape()</b> pair and transformations such as <b>translate()</b>, <b>rotate()</b>, and <b>scale()</b> do not work within a <b>beginContour()</b>/<b>endContour()</b> pair. It is also not possible to use other shapes, such as <b>ellipse()</b> or <b>rect()</b> within.
+]]></description>
+
+<syntax><c>sh</c>.beginContour()</syntax>
+
+<parameter>
+<label>sh</label>
+<description><![CDATA[PShape: any variable of type PShape]]></description>
+</parameter>
+
+
+<related>PShape_endContour</related>
+
+</root>

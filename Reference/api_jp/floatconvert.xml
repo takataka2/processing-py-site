@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>float()</name>
+
+<category>Data</category>
+
+<subcategory>Conversion</subcategory>
+
+<example>
+<code><![CDATA[
+i = 65
+f = float(i)
+print("%d : %.1f"% (i, f)) # Prints "65 : 65.0"
+]]></code>
+</example>
+
+<syntax>
+	var = float(i)
+</syntax>
+
+<parameter>
+<label>var</label>
+<description><![CDATA[variable name referencing the float]]></description>
+</parameter>
+
+<parameter>
+<label>i</label>
+<description><![CDATA[int: any int to be converted to a float]]></description>
+</parameter>
+
+<description><![CDATA[
+Converts an int to its floating point representation.
+]]></description>
+
+
+</root>

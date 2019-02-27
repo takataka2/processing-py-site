@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>PrintWriter</name>
+
+<category>Output</category>
+
+<subcategory>Files</subcategory>
+
+<usage>Web &amp; Application</usage>
+
+<!-- TODO(feinberg): Rplace this with pythonic io -->
+<example>
+<code><![CDATA[
+def setup(): 
+    # Create a file in the sketch directory
+    global output
+    output = createWriter("positions.txt")
+def draw(): 
+    point(mouseX, mouseY)
+    output.println(mouseX)# Write the coordinate to the file
+def keyPressed(): 
+    output.flush()# Writes the remaining data to the file
+    output.close()# Finishes the file
+    exit()# Stops the program
+]]></code>
+</example>
+
+<description><![CDATA[
+Allows characters to print to a text-output stream. A new PrintWriter object is created with the <b>createWriter()</b> function. For the file to be made correctly, it should be flushed and must be closed with its <b>flush()</b> and <b>close()</b> methods (see above example). 
+]]></description>
+
+<syntax></syntax>
+
+<method>
+<label>print()</label>
+<description>Adds data to the stream</description>
+<ref>PrintWriter_print</ref>
+</method>
+
+<method>
+<label>println()</label>
+<description>Adds data to the stream and starts a new line</description>
+<ref>PrintWriter_println</ref>
+</method>
+
+<method>
+<label>flush()</label>
+<description>Flushes the stream</description>
+<ref>PrintWriter_flush</ref>
+</method>
+
+<method>
+<label>close()</label>
+<description>Closes the stream</description>
+<ref>PrintWriter_close</ref>
+</method>
+
+<constructor></constructor>
+
+<related>createWriter</related>
+
+<availability>1.0</availability>
+
+<type>Object</type>
+
+<partof>PDE</partof>
+
+</root>

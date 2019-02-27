@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>or (logical OR)</name>
+
+<category>Control</category>
+
+<subcategory>Logical Operators</subcategory>
+
+<example>
+<image />
+<code><![CDATA[
+k = 0
+for y in range(5, 95, 5):
+    k += 1    
+    if y > 45 or k % 2 == 0:
+        # Set color to red for every other line when y <= 45
+        # and all y > 45.
+        stroke(color(255, 0, 0))
+    else:
+        stroke(0)    # Set color to black
+    line(30, y, 80, y)
+]]></code>
+</example>
+
+<description><![CDATA[
+<p>Compares two expressions and returns <b>True</b> if one or both evaluate to <b>True</b>. Returns <b>False</b> only if both expressions are <b>False</b>. The following list shows all possible combinations:
+<pre>
+True or False   # Evaluates True because the first is True
+False or True   # Evaluates True because the second is True
+True or True    # Evaluates True because both are True
+False or False  # Evaluates False because both are False
+</pre>
+<p>The "or" operator is <i>short-circuiting</i>; it will not bother to evaluate its
+second expression of the first is True. That means, in the following example, that
+<tt>DoSomething</tt> is never called:
+<pre>
+def DoSomething():
+    print "You will never see this message!"
+    return True
+
+x = True
+if x or DoSomething():
+    print "This always happens."
+</pre>
+
+]]></description>
+
+<syntax>
+<c>expression1</c> or <c>expression2</c>
+</syntax>
+
+<parameter>
+<label>expression1</label>
+<description><![CDATA[any valid expression]]></description>
+</parameter>
+
+<parameter>
+<label>expression2</label>
+<description><![CDATA[any valid expression]]></description>
+</parameter>
+
+<returns></returns>
+
+<related>logicalAND</related>
+<related>logicalNOT</related>
+<related>if</related>
+
+<availability>1.0</availability>
+
+<type>Operator</type>
+
+<partof>PYDE</partof>
+
+
+
+
+
+
+
+
+</root>

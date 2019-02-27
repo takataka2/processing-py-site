@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>setVisible()</name>
+
+<category>PShape</category>
+
+<subcategory>Method</subcategory>
+
+<type></type>
+
+<example>
+<image />
+<code><![CDATA[
+def setup(): 
+    size(100, 100)
+    # The file "bot.svg" must be in the data folder
+    # of the current sketch to load successfully 
+    global s
+    s = loadShape("bot.svg")
+
+def draw(): 
+    background(204)
+    shape(s, 10, 10, 80, 80)# Draw shape
+    s.setVisible(mousePressed)
+    if not s.isVisible():
+        noFill()
+        rect(10, 10, 80, 80)
+]]></code>
+</example>
+
+<description><![CDATA[
+Sets the shape to be visible or invisible. This is determined by the value of the <b>visible</b> parameter.<br/>
+<br/>
+The default visibility of a shape is usually controlled by whatever program created the SVG file. For instance, this parameter is controlled by showing or hiding the shape in the layers palette in Adobe Illustrator.
+]]></description>
+
+<syntax><c>sh</c>.setVisible(<c>visible</c>)</syntax>
+
+<parameter>
+<label>sh</label>
+<description><![CDATA[PShape: any variable of type PShape]]></description>
+</parameter>
+
+<parameter>
+<label>visible</label>
+<description><![CDATA[boolean: "false" makes the shape invisible and "true" makes it visible]]></description>
+</parameter>
+
+<related>PShape_isVisible</related>
+
+</root>

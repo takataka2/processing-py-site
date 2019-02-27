@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>curveTangent()</name>
+
+<category>Shape</category>
+
+<subcategory>Curves</subcategory>
+
+<type></type>
+
+<example>
+<image />
+<code><![CDATA[
+noFill()
+curve(5, 26, 73, 24, 73, 61, 15, 65)
+steps = 6
+for i in range(steps): 
+    t = i / float(steps)
+    x = curvePoint(5, 73, 73, 15, t)
+    y = curvePoint(26, 24, 61, 65, t)
+    #ellipse(x, y, 5, 5)
+    tx = curveTangent(5, 73, 73, 15, t)
+    ty = curveTangent(26, 24, 61, 65, t)
+    a = atan2(ty, tx)
+    a -= PI/2.0
+    line(x, y, cos(a)*8 + x, sin(a)*8 + y)
+]]></code>
+</example>
+
+<description><![CDATA[
+Calculates the tangent of a point on a curve. There's a good definition of <a href="http://en.wikipedia.org/wiki/Tangent" target="new"><em>tangent</em> on Wikipedia</a>.
+]]></description>
+
+<syntax>
+curveTangent(<c>a</c>, <c>b</c>, <c>c</c>, <c>d</c>, <c>t</c>)
+</syntax>
+
+<parameter>
+<label>a</label>
+<description><![CDATA[float: coordinate of first point on the curve]]></description>
+</parameter>
+
+<parameter>
+<label>b</label>
+<description><![CDATA[float: coordinate of first control point]]></description>
+</parameter>
+
+<parameter>
+<label>c</label>
+<description><![CDATA[float: coordinate of second control point]]></description>
+</parameter>
+
+<parameter>
+<label>d</label>
+<description><![CDATA[float: coordinate of second point on the curve]]></description>
+</parameter>
+
+<parameter>
+<label>t</label>
+<description><![CDATA[float: value between 0 and 1]]></description>
+</parameter>
+
+<related>curve</related>
+<related>curveVertex</related>
+<related>curvePoint</related>
+<related>bezierTangent</related>
+
+</root>

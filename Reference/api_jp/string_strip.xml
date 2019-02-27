@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>.strip()</name>
+
+<category>Data</category>
+
+<subcategory>String Methods</subcategory>
+
+<usage></usage>
+
+<example>
+<code><![CDATA[
+a = '              ...here...             '
+# If no arguments are given strip() removes leading and trailing whitespace.
+a = a.strip()
+print(a)             # Prints '...here...'
+aNoDots = a.strip('.') # Removes leading and trailing instances of '.'.
+print(aNoDots)       # Prints 'here'
+]]></code>
+</example>
+
+<description><![CDATA[
+Retruns a copy of the string with leading and trailing characters removed -- whitespace by default. Given an optional argument, strip removes specific leading and trailing characters. 
+]]></description>
+
+<syntax>
+a.strip()
+a.strip(<c>chars</c>)
+</syntax>
+ 
+<parameter>
+<label>chars</label>
+<description>an optional argument that removes specific characters</description>
+</parameter>
+
+<returns></returns>
+
+<related>string</related>
+<related>string_formatting</related>
+<related>string_find</related>
+<related>string_join</related>
+<related>string_split</related>
+<related>string_replace</related>
+
+<availability>1.0</availability>
+
+<type></type>
+
+<partof>PYDE</partof>
+
+</root>

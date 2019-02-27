@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>month()</name>
+
+<category>Input</category>
+
+<subcategory>Time &amp; Date</subcategory>
+
+<type></type>
+
+<example>
+<noimage />
+<code><![CDATA[
+d = day()  # Values from 1 - 31
+m = month()  # Values from 1 - 12
+y = year()  # 2003, 2004, 2005, etc.
+print(d)
+print(m)
+print(y)
+]]></code>
+</example>
+
+<description><![CDATA[
+Processing communicates with the clock on your computer. The <b>month()</b> function returns the current month as an integer from 1 - 12.
+]]></description>
+
+<syntax>
+month()
+</syntax>
+
+<related>millis</related>
+<related>second</related>
+<related>minute</related>
+<related>hour</related>
+<related>day</related>
+<related>year</related>
+
+</root>

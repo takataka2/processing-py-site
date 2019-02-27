@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+
+<name>cross()</name>
+
+<category>PVector</category>
+
+<subcategory>Method</subcategory>
+
+<type></type>
+
+<example>
+<code><![CDATA[
+v1 = PVector(10, 20, 2)
+v2 = PVector(60, 80, 6)
+v3 = v1.cross(v2)
+print(v3)# Prints "[ -40.0, 60.0, -400.0 ]"
+]]></code>
+</example>
+
+<description><![CDATA[
+Calculates and returns a vector composed of the cross product between two vectors.
+]]></description>
+
+<syntax>
+.cross(<c>v</c>)
+.cross(<c>v</c>, <c>target</c>)
+.cross(<c>v1</c>, <c>v2</c>, <c>target</c>)
+</syntax>
+
+<parameter>
+<label>v</label>
+<description><![CDATA[PVector: the vector to calculate the cross product]]></description>
+</parameter>
+
+<parameter>
+<label>v</label>
+<description><![CDATA[PVector: any variable of type PVector]]></description>
+</parameter>
+
+<parameter>
+<label>target</label>
+<description><![CDATA[PVector: PVector to store the result]]></description>
+</parameter>
+
+<parameter>
+<label>v1</label>
+<description><![CDATA[PVector: any variable of type PVector]]></description>
+</parameter>
+
+<parameter>
+<label>v2</label>
+<description><![CDATA[PVector: any variable of type PVector]]></description>
+</parameter>
+
+<parameter>
+<label>target</label>
+<description><![CDATA[PVector: PVector to store the result]]></description>
+</parameter>
+
+
+</root>

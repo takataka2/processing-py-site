@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>mouseWheel()</name>
+
+<category>Input</category>
+
+<subcategory>Mouse</subcategory>
+
+<type>p5function</type>
+
+<example>
+<noimage />
+<notest />
+<code><![CDATA[
+background_color = 127
+
+def setup(): 
+    size(100, 100)
+
+def draw(): 
+    background(background_color)
+
+def mouseWheel(event): 
+    e = event.getCount()
+    background_color += event.getCount()
+    # keep value in range
+    background_color = background_color % 255
+]]></code>
+</example>
+
+<description><![CDATA[
+The <b>mouseWheel()</b> function returns positive values when the mouse wheel is rotated down (toward the user), and negative values for the other direction (up or away from the user). On OS X with "natural" scrolling enabled, the values are opposite.
+<br/><br/>
+Mouse and keyboard events only work when a program has <b>draw()</b>. Without <b>draw()</b>, the code is only run once and then stops listening for events.
+]]></description>
+
+<syntax>
+mouseWheel(event)
+</syntax>
+
+<parameter>
+<label>event</label>
+<description><![CDATA[MouseEvent: the MouseEvent]]></description>
+</parameter>
+
+<related>mouseX</related>
+<related>mouseY</related>
+<related>pmouseX</related>
+<related>pmouseY</related>
+<related>mousePressed_var</related>
+<related>mousePressed</related>
+<related>mouseReleased</related>
+<related>mouseClicked</related>
+<related>mouseMoved</related>
+<related>mouseDragged</related>
+<related>mouseButton</related>
+
+</root>

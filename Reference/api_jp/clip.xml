@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+
+<name>clip()</name>
+
+<!-- unsupported_modes>js</unsupported_modes -->
+<!-- js_mode><description>This part of the Processing API is not supported in JavaScript mode</description></js_mode -->
+
+<category>Rendering</category>
+
+<subcategory></subcategory>
+
+<type></type>
+
+<example>
+<image />
+<code><![CDATA[
+size(200, 200)
+noFill()
+imageMode(CORNER)
+
+background(204)
+clip(25, 25, 125, 125)
+line(0, 0, width, height)
+line(0, height, width, 0)
+]]></code>
+</example>
+
+<description><![CDATA[
+Limits the rendering to the boundaries of a rectangle defined by the parameters. The boundaries are drawn based on the state of the <b>imageMode()</b> fuction, either CORNER, CORNERS, or CENTER. 
+]]></description>
+
+<syntax>
+clip(x1, y1, x2, y2)
+</syntax>
+
+<parameter>
+<label>x1</label>
+<description><![CDATA[int: x coordinate of first corner of bounding box]]></description>
+</parameter>
+
+<parameter>
+<label>y1</label>
+<description><![CDATA[int: y coordinate of first corner of bounding box]]></description>
+</parameter>
+
+<parameter>
+<label>x2</label>
+<description><![CDATA[int: x coordinate of second corner of bounding box]]></description>
+</parameter>
+
+<parameter>
+<label>y2</label>
+<description><![CDATA[int: y coordinate of second corner of bounding box]]></description>
+</parameter>
+
+
+
+</root>

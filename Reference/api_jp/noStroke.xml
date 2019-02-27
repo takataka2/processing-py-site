@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>noStroke()</name>
+
+<category>Color</category>
+
+<subcategory>Setting</subcategory>
+
+<type></type>
+
+<example>
+<image />
+<code><![CDATA[
+noStroke()
+rect(30, 20, 55, 55)
+]]></code>
+</example>
+
+<description><![CDATA[
+Disables drawing the stroke (outline). If both <b>noStroke()</b> and <b>noFill()</b> are called, nothing will be drawn to the screen.
+]]></description>
+
+<syntax>
+noStroke()
+</syntax>
+
+<related>stroke</related>
+<related>fill</related>
+<related>noFill</related>
+
+</root>

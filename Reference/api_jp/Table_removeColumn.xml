@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+
+<name>removeColumn()</name>
+
+<category>Table</category>
+
+<subcategory>Method</subcategory>
+
+<type>method</type>
+
+<example>
+	<noimage />
+<code><![CDATA[
+table = Table()
+table.addColumn("id")
+table.addColumn("species")
+table.addColumn("name")
+print(table.getColumnCount())  # Prints 3
+table.removeColumn("id")         # Reference by title
+print(table.getColumnCount())  # Prints 2
+]]></code>
+</example>
+
+<example>
+	<noimage />
+<code><![CDATA[
+table = Table()
+table.addColumn("id")
+table.addColumn("species")
+table.addColumn("name")
+print(table.getColumnCount())  # Prints 3
+table.removeColumn(0)            # Reference by ID
+print(table.getColumnCount())  # Prints 2
+]]></code>
+</example>
+
+<description><![CDATA[
+Use <b>removeColumn()</b> to remove an existing column from a <b>Table</b> object.  The column to be removed may be identified by either its title (a String) or its index value (an int).   <b>removeColumn(0)</b> would remove the first column, <b>removeColumn(1)</b> would remove the second column, and so on.
+]]></description>
+
+<syntax>
+.removeColumn(columnName)
+.removeColumn(column)
+</syntax>
+
+<parameter>
+<label>columnName</label>
+<description><![CDATA[String: the title of the column to be removed]]></description>
+</parameter>
+
+<parameter>
+<label>column</label>
+<description><![CDATA[int: the index number of the column to be removed]]></description>
+</parameter>
+
+<related>Table_addColumn</related>
+
+</root>

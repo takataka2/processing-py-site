@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>saveTable()</name>
+
+<category>Input</category>
+
+<subcategory>Files</subcategory>
+
+<type></type>
+
+<example>
+	<noimage />
+<code><![CDATA[
+table = Table()
+table.addColumn("id")
+table.addColumn("species")
+table.addColumn("name")
+newRow = table.addRow()
+newRow.setInt("id", table.getRowCount() - 1)
+newRow.setString("species", "Panthera leo")
+newRow.setString("name", "Lion")
+saveTable(table, "data/new.csv")
+# Sketch saves the following to a file called "new.csv":
+# id,species,name
+# 0,Panthera leo,Lion
+]]></code>
+</example>
+
+<description><![CDATA[
+Writes the contents of a Table object to a file. By default, this file is saved to the sketch's folder. This folder is opened by selecting "Show Sketch Folder" from the "Sketch" menu.<br/>
+<br/>
+Alternatively, the file can be saved to any location on the computer by using an absolute path (something that starts with / on Unix and Linux, or a drive letter on Windows).<br/>
+<br/>
+All files loaded and saved by the Processing API use UTF-8 encoding.
+]]></description>
+
+<syntax>
+saveTable(<c>table</c>, <c>filename</c>)
+saveTable(<c>table</c>, <c>filename</c>, <c>options</c>)
+</syntax> 
+
+<parameter>
+<label>table</label>
+<description><![CDATA[Table: the Table object to save to a file]]></description>
+</parameter>
+
+<parameter>
+<label>filename</label>
+<description><![CDATA[String: the filename to which the Table should be saved]]></description>
+</parameter>
+
+<parameter>
+<label>options</label>
+<description><![CDATA[String: can be one of "tsv", "csv", "bin", or "html"]]></description>
+</parameter>
+
+<related>Table</related>
+<related>loadTable</related>
+<related>loadBytes</related>
+<related>loadStrings</related>
+<related>loadXML</related>
+
+</root>

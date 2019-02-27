@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>.extend()</name>
+
+<category>Data</category>
+
+<subcategory>List Methods</subcategory>
+
+<usage></usage>
+
+<example>
+<code><![CDATA[
+shopping_list = ['carrot', 'cucumber']
+fruits = ['mango', 'pear']
+print(shopping_list)  # Prints ['carrot', 'cucumber']
+
+shopping_list.extend(fruits)
+print(shopping_list)  # Prints ['carrot', 'cucumber', 'mango', 'pear']
+]]></code>
+</example>
+
+<description><![CDATA[
+Extends a list by appending all of the elements of another list to the end.
+]]></description>
+
+<syntax>
+<c>a</c>.extend(<c>x</c>)
+</syntax>
+
+<parameter>
+<label>a</label>
+<description>list to extend</description>
+</parameter>
+
+<parameter>
+<label>x</label>
+<description>list of items to append to original list</description>
+</parameter>
+
+<returns></returns>
+
+<related>list_insert</related>
+<related>list_pop</related>
+<related>list_reverse</related>
+<related>list_index</related>
+
+<availability>1.0</availability>
+
+<type></type>
+
+<partof>PYDE</partof>
+
+
+
+
+
+
+
+
+</root>

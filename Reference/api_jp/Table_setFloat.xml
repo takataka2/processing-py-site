@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+
+<name>setFloat()</name>
+
+<category>Table</category>
+
+<subcategory>Method</subcategory>
+
+<type>method</type>
+
+<example>
+	<noimage />
+<code><![CDATA[
+table = Table()
+table.addColumn("number", Table.INT)
+table.addColumn("mass", Table.FLOAT)
+table.addColumn("name", Table.STRING)
+table.addRow()  # Creates an empty row
+table.setInt(0, "number", 8)
+table.setFloat(0, "mass", 15.9994)
+table.setString(0, "name", "Oxygen")
+print(table.getInt(0, "number"))             # Prints 8
+print(nf(table.getFloat(0, "mass"), 2, 4))   # Prints 15.9994
+print(table.getString(0, "name"))            # Prints "Oxygen"
+]]></code>
+</example>
+
+<description><![CDATA[
+Stores a float value in the <b>Table</b>'s specified row and column. The row is specified by its ID, while the column may be specified by either its ID or title.
+]]></description>
+
+<syntax>
+.setFloat(row, column, value)
+.setFloat(row, columnName, value)
+</syntax>
+
+<parameter>
+<label>row</label>
+<description><![CDATA[int: ID number of the target row]]></description>
+</parameter>
+
+<parameter>
+<label>column</label>
+<description><![CDATA[int: ID number of the target column]]></description>
+</parameter>
+
+<parameter>
+<label>value</label>
+<description><![CDATA[float: value to assign]]></description>
+</parameter>
+
+<parameter>
+<label>columnName</label>
+<description><![CDATA[String: title of the target column]]></description>
+</parameter>
+
+<related>XML_setInt</related>
+<related>XML_setString</related>
+<related>XML_getInt</related>
+<related>XML_getFloat</related>
+<related>XML_getString</related>
+<related>Table_getStringColumn</related>
+
+</root>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>setup()</name>
+
+<category>Structure</category>
+
+<subcategory></subcategory>
+
+<type>p5function</type>
+
+<example>
+<noimage />
+<notest />
+<code><![CDATA[
+a = 0
+
+def setup(): 
+	size(200, 200)
+	background(0)
+	noStroke()
+	fill(102)
+
+def draw():
+	background(0)
+	global a
+	a = (a + 1) % width
+	rect(a, 10, 2, 80)
+
+]]></code>
+</example>
+
+<description><![CDATA[
+The <b>setup()</b> function is called once when the program starts. It's used to define initial 
+enviroment properties such as screen size and background color and to load media such as images
+and fonts as the program starts. There can only be one <b>setup()</b> function for each program and 
+it shouldn't be called again after its initial execution. Note: Variables declared within 
+<b>setup()</b> are not accessible within other functions, including <b>draw()</b>. 
+]]></description>
+
+<syntax>
+setup()
+</syntax>
+
+<related>size</related>
+<related>loop</related>
+<related>noLoop</related>
+<related>draw</related>
+
+</root>

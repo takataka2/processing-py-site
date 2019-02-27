@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+
+<name>random2D()</name>
+
+<category>PVector</category>
+
+<subcategory>Method</subcategory>
+
+<type></type>
+
+<example>
+	<noimage />
+<code><![CDATA[
+v = PVector.random2D()
+print(v)
+# May print something like:
+# [ -0.75006354, -0.6613658, 0.0 ] or 
+# [ 0.13742635, 0.990512, 0.0 ] or 
+# [ -0.9456181, -0.32527903, 0.0 ]
+]]></code>
+</example>
+
+<description><![CDATA[
+Returns a new 2D unit vector with a random direction.  If you pass in <b>this</b> as an argument, it will use the PApplet's random number generator.
+]]></description>
+
+<syntax>
+.random2D()
+.random2D(<c>parent</c>)
+.random2D(<c>target</c>)
+.random2D(<c>target</c>, <c>parent</c>)
+</syntax>
+
+<parameter>
+<label>parent</label>
+<description><![CDATA[PApplet: current PApplet instance]]></description>
+</parameter>
+
+<parameter>
+<label>target</label>
+<description><![CDATA[PVector: the target vector (if null, a new vector will be created)]]></description>
+</parameter>
+
+<related>PVector_random3D</related>
+
+</root>

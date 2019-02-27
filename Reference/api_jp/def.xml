@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>def</name>
+
+<category>Structure</category>
+
+<subcategory></subcategory>
+
+<usage></usage>
+
+<example>
+<image />
+<code><![CDATA[
+def tinySquare(x, y): # Use "def" to define a function tinySquare.
+    squareSize = 10
+    rect(x, y, squareSize, squareSize) 
+
+rectMode(CENTER)
+
+background(0)
+tinySquare(width/2, height/2)
+]]></code>
+</example>
+
+<description><![CDATA[
+    The keyword <b>def</b> introduces a function definition. It is followed by a function name, and a paranthesized list of parameters.  
+]]></description>
+
+<syntax>
+	def functionName():
+	    statements
+</syntax>
+
+<parameter>
+<label></label>
+<description></description>
+</parameter>
+
+<returns></returns>
+
+
+<availability>1.0</availability>
+
+<type>Keyword</type>
+
+<partof>PYDE</partof>
+
+</root>

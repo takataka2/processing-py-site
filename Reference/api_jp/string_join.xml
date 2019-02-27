@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>.join()</name>
+
+<category>Data</category>
+
+<subcategory>String Methods</subcategory>
+
+<usage></usage>
+
+<example>
+<code><![CDATA[
+separator = ' and '            # String to separate sequence items by.
+words = ['this', 'that']       # String to join.
+joined = separator.join(words) # Join items in sequence words,
+                               # separated by 'separator'.
+print(joined)
+
+polyhedra = ["cube", "dodecahedron", "icosahedron"]
+
+# The .join() method is often called on a string literal, without assigning it
+# to a variable first.
+joined = ", ".join(polyhedra)
+
+print(joined) # Prints "cube, dodecahedron, icosahedron"
+]]></code>
+</example>
+
+<description><![CDATA[
+Combines a sequence of strings to create a new string, separating each item from the sequence with the content of the string the method is called on.
+
+]]></description>
+
+<syntax>
+	<c>separator</c>.join(<c>sequence</c>)
+</syntax>
+
+<parameter>
+<label>separator</label>
+<description><![CDATA[The string to insert between elements of the sequence.]]></description>
+</parameter>
+
+<parameter>
+<label>sequence</label>
+<description><![CDATA[A sequence (e.g., list or tuple) of strings to be joined together.]]></description>
+</parameter>
+
+<returns></returns>
+
+<related>string_formatting</related>
+<related>string_find</related>
+<related>string_strip</related>
+<related>string_split</related>
+<related>string_replace</related>
+
+<availability>1.0</availability>
+
+<type></type>
+
+<partof>PYDE</partof>
+
+</root>

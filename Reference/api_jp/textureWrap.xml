@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>textureWrap()</name>
+
+<!-- unsupported_modes>js</unsupported_modes -->
+<!-- js_mode><description>This part of the Processing API is not supported in JavaScript mode</description></js_mode -->
+
+<category>Image</category>
+
+<subcategory>Textures</subcategory>
+
+<type></type>
+
+<example>
+<image />
+<code><![CDATA[
+size(150, 150, P2D)
+img = loadImage("rockies.jpg")
+textureMode(NORMAL)
+
+background(0)
+textureWrap(REPEAT)
+beginShape()
+texture(img)
+vertex(0, 0, 0, 0)
+vertex(150, 0, 2, 0)
+vertex(150, 150, 2, 2)
+vertex(0, 150, 0, 2)
+endShape()
+]]></code>
+</example>
+
+<example>
+<image />
+<code><![CDATA[
+size(150, 150, P2D)
+img = loadImage("rockies.jpg")
+textureMode(NORMAL)
+
+background(0)
+textureWrap(CLAMP)
+beginShape()
+texture(img)
+vertex(0, 0, 0, 0)
+vertex(150, 0, 2, 0)
+vertex(150, 150, 2, 2)
+vertex(0, 150, 0, 2)
+endShape()
+]]></code>
+</example>
+
+<description><![CDATA[
+Defines if textures repeat or draw once within a texture map. The two parameters are CLAMP (the default behavior) and REPEAT. This function only works with the P2D and P3D renderers.
+]]></description>
+
+<syntax>
+	textureWrap(mode)
+</syntax>
+
+<parameter>
+<label>mode</label>
+<description><![CDATA[int: either CLAMP or REPEAT]]></description>
+</parameter>
+
+<related>texture</related>
+<related>textureMode</related>
+
+</root>

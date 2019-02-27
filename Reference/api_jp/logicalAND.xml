@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>&amp;&amp; (logical AND)</name>
+
+<category>Control</category>
+
+<subcategory>Logical Operators</subcategory>
+
+<example>
+<image />
+<code><![CDATA[
+k = 0
+for y in range(5, 95, 5):
+    k += 1    
+    if y > 45 and k % 2 == 0:
+        # Set color to red for every other line
+        # for all y > 45.
+        stroke(color(255, 0, 0))
+    else:
+        stroke(0)    # Set color to black
+    line(30, y, 80, y)
+]]></code>
+</example>
+
+<description><![CDATA[
+<p>Compares two expressions and evaluates to <b>True</b> only if both evaluate to <b>True</b>. Returns <b>False</b> if one or both evaluate to <b>False</b>. The following list shows all possible combinations:
+<pre>
+True and False   # Evaluates False because the second is False
+False and True   # Evaluates False because the first is False
+True and True    # Evaluates True because both are True
+False and False  # Evaluates False because both are False
+</pre>
+<p>The "and" operator is <i>short-circuiting</i>; it will not bother to evaluate its
+second expression of the first is False. That means, in the following example, that
+<tt>DoSomething</tt> is never called:
+<pre>
+def DoSomething():
+    print "I did something!"
+    return True
+
+x = False
+if x and DoSomething():
+    print "This cannot happen."
+</pre>
+]]></description>
+
+<syntax>
+<c>expression1</c> and <c>expression2</c>
+</syntax>
+
+<parameter>
+<label>expression1</label>
+<description><![CDATA[any valid expression]]></description>
+</parameter>
+
+<parameter>
+<label>expression2</label>
+<description><![CDATA[any valid expression]]></description>
+</parameter>
+
+<returns></returns>
+
+<related>logicalOR</related>
+<related>logicalNOT</related>
+<related>if</related>
+
+<availability>1.0</availability>
+
+<type>Operator</type>
+
+<partof>PYDE</partof>
+
+</root>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>.reverse()</name>
+
+<category>Data</category>
+
+<subcategory>List Methods</subcategory>
+
+<usage></usage>
+
+<example>
+	<noimage />
+<code><![CDATA[
+a = [1, 2, 3]
+a.reverse()
+print(a) # Prints [3, 2, 1]
+]]></code>
+</example>
+
+<description><![CDATA[
+Reverse the elements of a list in place.
+]]></description>
+
+<syntax>
+	a.reverse()
+</syntax>
+
+<parameter>
+<label>a</label>
+<description><![CDATA[list: the list to be reversed]]></description>
+</parameter>
+<returns></returns>
+
+
+<related>list_insert</related>
+<related>list_pop</related>
+<related>list_append</related>
+<related>list_index</related>
+
+<availability>1.0</availability>
+
+<type></type>
+
+<partof>PYDE</partof>
+
+</root>

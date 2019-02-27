@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+
+<name>set()</name>
+
+<category>PVector</category>
+
+<subcategory>Method</subcategory>
+
+<type></type>
+
+<example>
+	<noimage />
+<code><![CDATA[
+size(100, 100)
+v = PVector(0.0, 0.0, 0.0)
+v.set(20.0, 30.0, 40.0)
+print(v.x)  # Prints "20.0"
+print(v.y)  # Prints "30.0"
+print(v.z)  # Prints "40.0"
+]]></code>
+</example>
+
+<example>
+	<noimage />
+<code><![CDATA[
+size(100, 100)
+v1 = PVector(20.0, 30.0, 40.0)
+v2 = PVector(0.0, 0.0, 0.0)
+v2.set(v1)
+print(v2.x)  # Prints "20.0"
+print(v2.y)  # Prints "30.0"
+print(v2.z)  # Prints "40.0"
+]]></code>
+</example>
+
+<example>
+	<noimage />
+<code><![CDATA[
+vvv = [20.0, 30.0, 40.0]
+size(100, 100)
+v = PVector(0.0, 0.0, 0.0)
+v.set(vvv)
+print(v.x)  # Prints "20.0"
+print(v.y)  # Prints "30.0"
+print(v.z)  # Prints "40.0"
+]]></code>
+</example>
+
+
+<description><![CDATA[
+Sets the x, y, and z component of the vector using three separate variables, the data from a PVector, or the values from a float array.
+]]></description>
+
+<syntax>
+.set(<c>x</c>, <c>y</c>, <c>z</c>)
+.set(<c>x</c>, <c>y</c>)
+.set(<c>v</c>)
+.set(<c>source</c>)
+</syntax>
+
+<parameter>
+<label>x</label>
+<description><![CDATA[float: the x component of the vector]]></description>
+</parameter>
+
+<parameter>
+<label>y</label>
+<description><![CDATA[float: the y component of the vector]]></description>
+</parameter>
+
+<parameter>
+<label>z</label>
+<description><![CDATA[float: the z component of the vector]]></description>
+</parameter>
+
+<parameter>
+<label>x</label>
+<description><![CDATA[float: the x component of the vector]]></description>
+</parameter>
+
+<parameter>
+<label>y</label>
+<description><![CDATA[float: the y component of the vector]]></description>
+</parameter>
+
+<parameter>
+<label>v</label>
+<description><![CDATA[float: the y component of the vector]]></description>
+</parameter>
+
+<parameter>
+<label>source</label>
+<description><![CDATA[float: list to copy from]]></description>
+</parameter>
+
+
+</root>

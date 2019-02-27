@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+
+<name>dot()</name>
+
+<category>PVector</category>
+
+<subcategory>Method</subcategory>
+
+<type></type>
+
+<example>
+<noimage />
+<code><![CDATA[
+v = PVector(10, 20, 0)
+d = v.dot(60, 80, 0)
+print(d)  # Prints "2200.0"
+]]></code>
+</example>
+
+<example>
+<noimage />
+<code><![CDATA[
+v1 = PVector(10, 20, 0)
+v2 = PVector(60, 80, 0)
+d = v1.dot(v2)
+print(d)  # Prints "2200.0"
+]]></code>
+</example>
+
+<description><![CDATA[
+Calculates the dot product of two vectors.
+]]></description>
+
+<syntax>
+.dot(<c>v</c>)
+.dot(<c>x</c>, <c>y</c>, <c>z</c>)
+.dot(<c>v1</c>, <c>v2</c>)
+</syntax>
+
+<parameter>
+<label>v</label>
+<description><![CDATA[PVector: any variable of type PVector]]></description>
+</parameter>
+
+<parameter>
+<label>x</label>
+<description><![CDATA[float: x component of the vector]]></description>
+</parameter>
+
+<parameter>
+<label>y</label>
+<description><![CDATA[float: y component of the vector]]></description>
+</parameter>
+
+<parameter>
+<label>z</label>
+<description><![CDATA[float: z component of the vector]]></description>
+</parameter>
+
+<parameter>
+<label>v1</label>
+<description><![CDATA[PVector: any variable of type PVector]]></description>
+</parameter>
+
+<parameter>
+<label>v2</label>
+<description><![CDATA[PVector: any variable of type PVector]]></description>
+</parameter>
+
+
+</root>

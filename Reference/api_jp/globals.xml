@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>Globals</name>
+
+<category>Structure</category>
+
+<subcategory></subcategory>
+
+<usage></usage>
+
+<example>
+<noimage />
+<notest />
+<code><![CDATA[
+# We create the global x by declaring it outside of a function. 
+x = 0
+
+def keyPressed():
+    # We want to modify the global x. 
+    global x 
+    x = x + 1
+
+def draw():
+    # We wish to read the global x.
+    ellipse(x, height / 2, 10, 10)
+]]></code>
+</example>
+
+<description><![CDATA[
+Global variables are declared outside functions and are readable throughout the program. If you wish to modify or create a global variable from within a function, you must use the <tt>global</tt> Python statement. 
+]]></description>
+
+<syntax>
+	x = 0
+
+	def foo():
+	    global x
+	    x = 5 
+</syntax>
+
+
+<returns></returns>
+
+
+<availability>1.0</availability>
+
+<type></type>
+
+<partof>PYDE</partof>
+
+</root>

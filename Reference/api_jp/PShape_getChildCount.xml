@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>getChildCount()</name>
+
+<category>PShape</category>
+
+<subcategory>Method</subcategory>
+
+<type></type>
+
+<example>
+<noimage />
+<code><![CDATA[
+size(100, 100)
+states = loadShape("apple.svg")
+count = states.getChildCount()
+print(count)
+]]></code>
+</example>
+
+<description><![CDATA[
+Returns the number of children within the PShape.
+]]></description>
+
+<syntax><c>sh</c>.getChildCount()</syntax>
+
+<parameter>
+<label>sh</label>
+<description><![CDATA[PShape: any variable of type PShape]]></description>
+</parameter>
+
+
+
+</root>

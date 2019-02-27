@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+
+<name>endDraw()</name>
+
+<category>PGraphics</category>
+
+<subcategory>Method</subcategory>
+
+<type></type>
+
+<example>
+<image />
+<code><![CDATA[
+size(100, 100, P2D)
+pg = createGraphics(80, 80, P2D)
+pg.beginDraw()
+pg.background(102)
+pg.stroke(255)
+pg.line(20, 20, 80, 80)
+pg.endDraw()
+
+image(pg, 10, 10)
+]]></code>
+</example>
+
+<description><![CDATA[
+Finalizes the rendering of a PGraphics object so that it can be shown on screen.
+]]></description>
+
+<syntax>
+<c>graphics</c>.endDraw()
+</syntax>
+
+<parameter>
+<label>graphics</label>
+<description><![CDATA[PGraphics: any object of the type PGraphics]]></description>
+</parameter>
+
+
+
+</root>

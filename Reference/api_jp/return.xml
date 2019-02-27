@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>return</name>
+
+<category>Structure</category>
+
+<subcategory></subcategory>
+
+<usage>Web &amp; Application</usage>
+
+<example>
+	<noimage />
+<code><![CDATA[
+def timestwo(dVal):
+    return dVal  * 2
+
+t = timestwo(30)
+print(t) # 60
+
+]]></code>
+</example>
+
+<example>
+	<noimage />
+<code><![CDATA[
+def timestwo(dVals):
+    return [x * 2 for x in dVals]
+
+t = timestwo([10, 20, 30])
+print(t)  # [20, 40, 60]
+]]></code>
+</example>
+
+<example>
+	<noimage />
+	<notest />
+<code><![CDATA[
+def draw(): 
+    background(204)
+    line(0, 0, width, height)
+    if mousePressed:
+        return  # Break out of draw(), skipping the line statement below
+    line(0, height, width, 0)# Executed only if mouse is not pressed
+]]></code>
+</example>
+
+<description><![CDATA[
+Keyword used to indicate the value to return from a function.
+<br/>
+The keyword <b>return</b> may also be used to break out of a function, thus not allowing the program to the remaining statements. (See the third example above.)
+]]></description>
+
+<syntax>
+def <c>function</c>:
+    <c>statements</c>
+    return <c>value</c>
+</syntax>
+
+<parameter>
+<label>function</label>
+<description><![CDATA[the function being defined]]></description>
+</parameter>
+
+<parameter>
+<label>statements</label>
+<description><![CDATA[any valid statements]]></description>
+</parameter>
+
+<parameter>
+<label>value</label>
+<description><![CDATA[the value to return]]></description>
+</parameter>
+
+<returns></returns>
+
+
+<availability>1.0</availability>
+
+<type>Keyword</type>
+
+<partof>PDE</partof>
+
+
+</root>

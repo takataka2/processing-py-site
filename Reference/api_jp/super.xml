@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+
+<name>super</name>
+
+<category>Structure</category>
+
+<subcategory></subcategory>
+
+<usage>Web &amp; Application</usage>
+
+<example>
+<code><![CDATA[
+class Robot(object):
+  def speak(self):
+    print("BZZT BOOP BEEP")
+
+class RoboFeline(Robot):
+  def speak(self):
+    super(RoboFeline, self).speak()
+    print("MEOW PURR PURR")
+
+kitty = RoboFeline()
+kitty.speak()
+# Prints:
+# BZZT BOOP BEEP
+# MEOW PURR PURR
+]]></code>
+</example>
+
+<example>
+<code><![CDATA[
+class Animal(object):
+  def __init__(self):
+    self.leg_count = 6
+
+class Grasshopper(Animal):
+  def __init__(self):
+    # call the __init__ method of parent class
+    super(Grasshopper, self).__init__()
+
+hopsalot = Grasshopper()
+print(hopsalot.leg_count) # Prints 6
+]]></code>
+</example>
+
+<description><![CDATA[
+The <b>super()</b> function allows you to call a method defined in a parent
+class. Invoke the function with two parameters: the name of the class the
+method is defined in, and <b>self</b>. <a
+href="https://docs.python.org/2/library/functions.html#super">See the
+official Python documentation</a> for more details.
+
+]]></description>
+
+<syntax>
+super(<c>class</c>, self)
+</syntax>
+
+<parameter>
+<label>class</label>
+<description>The class in which the method is defined</description>
+</parameter>
+
+<returns></returns>
+
+<related>class</related>
+
+<availability>1.0</availability>
+
+<type>Keyword</type>
+
+<partof>PDE</partof>
+
+
+
+</root>

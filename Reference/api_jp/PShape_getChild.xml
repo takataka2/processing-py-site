@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>getChild()</name>
+
+<category>PShape</category>
+
+<subcategory>Method</subcategory>
+
+<type></type>
+
+<example>
+<image />
+<code><![CDATA[
+size(100, 100)
+
+states = loadShape("tristate.svg")
+ohio = states.getChild("OH")
+ohio.disableStyle()
+
+background(0)
+shape(states, -48, 5)
+fill(102, 0, 0)
+shape(ohio, -48, 5)
+]]></code>
+</example>
+
+<description><![CDATA[
+Extracts a child shape from a parent shape. Specify the name of the shape with the <b>target</b> parameter. The shape is returned as a <b>PShape</b> object, or <b>null</b> is returned if there is an error.
+]]></description>
+
+<syntax>
+<c>sh</c>.getChild(<c>index</c>)
+<c>sh</c>.getChild(<c>target</c>)
+</syntax>
+
+<parameter>
+<label>sh</label>
+<description><![CDATA[PShape: any variable of type PShape]]></description>
+</parameter>
+
+<parameter>
+<label>index</label>
+<description><![CDATA[int: the layer position of the shape to get]]></description>
+</parameter>
+
+<parameter>
+<label>target</label>
+<description><![CDATA[String: the name of the shape to get]]></description>
+</parameter>
+
+<related>XML_addChild</related>
+
+</root>

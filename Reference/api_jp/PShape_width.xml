@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>width</name>
+
+<category>PShape</category>
+
+<subcategory>Field</subcategory>
+
+<type></type>
+
+<example>
+<image />
+<code><![CDATA[
+s = loadShape("bot.svg")
+print(s.width) # Prints "281.0", the width of the shape
+]]></code>
+</example>
+
+<description><![CDATA[
+The width of the PShape document.
+]]></description>
+
+<related>PShape_height</related>
+
+</root>

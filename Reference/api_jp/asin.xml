@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>asin()</name>
+
+<category>Math</category>
+
+<subcategory>Trigonometry</subcategory>
+
+<type></type>
+
+<example>
+<image />
+<code><![CDATA[
+a = PI/3
+s = sin(a)
+arcsin = asin(s)
+# Prints "1.0471976 : 0.86602545 : 1.0471976"
+print("%.7f : %.8f : %.7f" % (a, s, arcsin))
+]]></code>
+</example>
+
+<example>
+<image />
+<code><![CDATA[
+a = PI + PI/3.0
+s = sin(a)
+arcsin = asin(s)
+# Prints "4.1887903 : -0.86602545 : -1.0471976"
+print("%.7f : %.8f : %.7f" % (a, s, arcsin))
+]]></code>
+</example>
+
+<description><![CDATA[
+The inverse of <b>sin()</b>, returns the arc sine of a value. This function expects the values in the range of -1 to 1 and values are returned in the range <b>-PI/2</b> to <b>PI/2</b>.
+]]></description>
+
+<syntax>
+asin(<c>value</c>)
+</syntax>
+
+<parameter>
+<label>value</label>
+<description><![CDATA[float: the value whose arc sine is to be returned]]></description>
+</parameter>
+
+<related>sin</related>
+<related>acos</related>
+<related>atan</related>
+
+</root>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+
+<name>getRow()</name>
+
+<category>Table</category>
+
+<subcategory>Method</subcategory>
+
+<type>method</type>
+
+<example>
+<code><![CDATA[
+def setup():
+    table = Table()
+    table.addColumn("name")
+    table.addColumn("type")
+    newRow = table.addRow()
+    newRow.setString("name", "Lion")
+    newRow.setString("type", "Mammal")
+    newRow = table.addRow()
+    newRow.setString("name", "Snake")
+    newRow.setString("type", "Reptile")
+    newRow = table.addRow()
+    newRow.setString("name", "Mosquito")
+    newRow.setString("type", "Insect")
+    row = table.getRow(2)
+    print(row.getString("name"))  # Prints "Mosquito"
+    row.setString("name", "Ladybug")
+    print(row.getString("name"))  # Prints "Ladybug"
+]]></code>
+</example>
+
+<description><![CDATA[
+Returns a reference to the specified <b>TableRow</b>.  The reference can then be used to get and set values of the selected row, as illustrated in the example above.
+]]></description>
+
+<syntax>
+.getRow(row)
+</syntax>
+
+<related>Table_rows</related>
+<related>Table_findRow</related>
+<related>Table_findRows</related>
+<related>Table_matchRow</related>
+<related>Table_matchRows</related>
+
+</root>

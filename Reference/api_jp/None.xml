@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>None</name>
+
+<category>Structure</category>
+
+<subcategory></subcategory>
+
+<usage></usage>
+
+<example>
+<image />
+<code><![CDATA[
+print True == None # Prints False
+print False == None # Prints False 
+print None == None # Prints True
+]]></code>
+</example>
+
+<description><![CDATA[ None is often used to represent the absences of a value. Such as
+	when default arguments are not passed to a function. 
+]]></description>
+
+<syntax>
+x = None 
+</syntax>
+
+<parameter>
+<label></label>
+<description></description>
+</parameter>
+
+<returns></returns>
+
+
+<availability>1.0</availability>
+
+<type></type>
+
+<partof></partof>
+
+<related>True</related>
+<related>False</related>
+
+
+
+
+
+
+
+</root>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+
+<name>heading()</name>
+
+<category>PVector</category>
+
+<subcategory>Method</subcategory>
+
+<type></type>
+
+<example>
+<image />
+<code><![CDATA[
+v = PVector(10.0, 20.0)
+print(v.heading())  # Prints "1.1071487665176392"
+]]></code>
+</example>
+
+<description><![CDATA[
+Calculates the angle of rotation for a vector (2D vectors only).
+]]></description>
+
+<syntax>
+.heading()
+</syntax>
+
+
+</root>

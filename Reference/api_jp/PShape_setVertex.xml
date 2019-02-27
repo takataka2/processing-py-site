@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>setVertex()</name>
+
+<!-- unsupported_modes>js</unsupported_modes -->
+<!-- js_mode><description>This part of the Processing API is not supported in JavaScript mode</description></js_mode -->
+
+<category>PShape</category>
+
+<subcategory>Method</subcategory>
+
+<type></type>
+
+<example>
+<image />
+<code><![CDATA[
+size(50, 300, P2D)
+background(255)
+s = createShape()
+s.beginShape()
+s.vertex(0, 0)
+s.vertex(30, 0)
+s.vertex(30, 30)
+s.vertex(0, 30)
+s.endShape(CLOSE)
+
+for loopcount in range(6):
+  pushMatrix()
+  translate(10, 10 + loopcount * height/6)
+  for vertex_index in range(s.getVertexCount()): 
+    v = s.getVertex(vertex_index)
+    v.x += random(-2, 2)
+    v.y += random(-2, 2)
+    s.setVertex(vertex_index, v)
+    shape(s)
+  popMatrix()
+]]></code>
+</example>
+
+<description><![CDATA[
+The <b>setVertex()</b> method defines the coordinates of the vertex point located at the position defined by the <b>index</b> parameter. This method works when shapes are created as shown in the example above, but won't work properly when a shape is defined explicitly (e.g. createShape(RECT, 20, 20, 80, 80).
+]]></description>
+
+<syntax>
+<c>sh</c>.setVertex(<c>index</c>, <c>x</c>, <c>y</c>)
+<c>sh</c>.setVertex(<c>index</c>, <c>x</c>, <c>y</c>, <c>z</c>)
+<c>sh</c>.setVertex(<c>index</c>, <c>vec</c>)
+</syntax>
+
+<parameter>
+<label>sh</label>
+<description><![CDATA[PShape: any variable of type PShape]]></description>
+</parameter>
+
+<parameter>
+<label>index</label>
+<description><![CDATA[int: the location of the vertex]]></description>
+</parameter>
+
+<parameter>
+<label>x</label>
+<description><![CDATA[float: the x value for the vertex]]></description>
+</parameter>
+
+<parameter>
+<label>y</label>
+<description><![CDATA[float: the y value for the vertex]]></description>
+</parameter>
+
+<parameter>
+<label>z</label>
+<description><![CDATA[float: the z value for the vertex]]></description>
+</parameter>
+
+<parameter>
+<label>vec</label>
+<description><![CDATA[PVector: the PVector to define the x, y, z coordinates]]></description>
+</parameter>
+
+<related>PShape_getVertex</related>
+<related>PShape_getVertexCount</related>
+
+</root>

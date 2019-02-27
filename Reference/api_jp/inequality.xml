@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>!= (inequality)</name>
+
+<category>Control</category>
+
+<subcategory>Relational Operators</subcategory>
+
+<usage>Web &amp; Application</usage>
+
+<example>
+<code><![CDATA[
+a = 22
+b = 23
+if a != b:
+    print("variable a is not equal to variable b")
+]]></code>
+</example>
+
+<description><![CDATA[
+Determines if one expression is not equivalent to another.
+]]></description>
+
+<syntax>
+<c>value1</c> != <c>value2</c>
+</syntax>
+
+<parameter>
+<label>value1</label>
+<description><![CDATA[int, float, byte, boolean, String]]></description>
+</parameter>
+
+<parameter>
+<label>value2</label>
+<description><![CDATA[int, float, byte, boolean, String]]></description>
+</parameter>
+
+<returns></returns>
+
+<related>greaterthan</related>
+<related>lessthan</related>
+<related>greaterthanorequalto</related>
+<related>lessthanorequalto</related>
+<related>equality</related>
+
+<availability>1.0</availability>
+
+<type>Operator</type>
+
+<partof>PYDE</partof>
+
+
+
+
+
+
+
+
+
+</root>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+
+<name>fromAngle()</name>
+
+<category>PVector</category>
+
+<subcategory>Method</subcategory>
+
+<type></type>
+
+<example>
+<image />
+<code><![CDATA[
+v = PVector.fromAngle(0.01)
+print(v)  # Prints "[ 0.99995, 0.009999833, 0.0 ]"
+]]></code>
+</example>
+
+<description><![CDATA[
+Calculates and returns a new 2D unit vector from the specified angle value (in radians).
+]]></description>
+
+<syntax>
+.fromAngle(<c>angle</c>)
+.fromAngle(<c>angle</c>, <c>target</c>)
+</syntax>
+
+<parameter>
+<label>angle</label>
+<description><![CDATA[float: the angle in radians]]></description>
+</parameter>
+
+<parameter>
+<label>target</label>
+<description><![CDATA[PVector: the target vector (if null, a new vector will be created)]]></description>
+</parameter>
+
+
+</root>

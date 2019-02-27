@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>frustum()</name>
+
+<category>Lights, Camera</category>
+
+<subcategory>Camera</subcategory>
+
+<type></type>
+
+<example>
+<image />
+<code><![CDATA[
+size(100, 100, P3D)
+noFill()
+background(204)
+frustum(-10, 0, 0, 10, 10, 200)
+rotateY(PI/6)
+box(45)
+]]></code>
+</example>
+
+<description><![CDATA[
+Sets a perspective matrix as defined by the parameters.<br/>
+<br/>
+A frustum is a geometric form: a pyramid with its top cut off.  With the viewer's eye at the imaginary top of the pyramid, the six planes of the frustum act as clipping planes when rendering a 3D view.  Thus, any form inside the clipping planes is rendered and visible; anything outside those planes is not visible.<br/>
+<br/>
+Setting the frustum has the effect of changing the <em>perspective</em> with which the scene is rendered.  This can be acheived more simply in many cases by using <strong>perspective()</strong>.<br/>
+<br/>
+Note that the near value must be greater than zero (as the point of the frustum "pyramid" cannot converge "behind" the viewer).  Similarly, the far value must be greater than the near value (as the "far" plane of the frustum must be "farther away" from the viewer than the near plane).<br/>
+<br/>
+Works like glFrustum, except it wipes out the current perspective matrix rather than multiplying itself with it.
+]]></description>
+
+<syntax>
+frustum(<c>left</c>, <c>right</c>, <c>bottom</c>, <c>top</c>, <c>near</c>, <c>far</c>)
+</syntax>
+
+<parameter>
+<label>left</label>
+<description><![CDATA[float: left coordinate of the clipping plane]]></description>
+</parameter>
+
+<parameter>
+<label>right</label>
+<description><![CDATA[float: right coordinate of the clipping plane]]></description>
+</parameter>
+
+<parameter>
+<label>bottom</label>
+<description><![CDATA[float: bottom coordinate of the clipping plane]]></description>
+</parameter>
+
+<parameter>
+<label>top</label>
+<description><![CDATA[float: top coordinate of the clipping plane]]></description>
+</parameter>
+
+<parameter>
+<label>near</label>
+<description><![CDATA[float: near component of the clipping plane; must be greater than zero]]></description>
+</parameter>
+
+<parameter>
+<label>far</label>
+<description><![CDATA[float: far component of the clipping plane; must be greater than the near value]]></description>
+</parameter>
+
+<related>camera</related>
+<related>endCamera</related>
+<related>perspective</related>
+
+</root>

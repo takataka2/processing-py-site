@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+
+<name>removeChild()</name>
+
+<category>XMLElement</category>
+
+<subcategory>Method</subcategory>
+
+<type></type>
+
+<example>
+	<noimage />
+<code><![CDATA[
+# The following short XML file called "mammals.xml" is parsed 
+# in the code below. It must be in the project's "data" folder.
+#
+# &lt;?xml version="1.0"?&gt;
+# &lt;mammals&gt;
+#     &lt;animal id="0" species="Capra hircus"&gt;Goat&lt;/animal&gt;
+#     &lt;animal id="1" species="Panthera pardus"&gt;Leopard&lt;/animal&gt;
+#     &lt;animal id="2" species="Equus zebra"&gt;Zebra&lt;/animal&gt;
+# &lt;/mammals&gt;
+xml = loadXML("mammals.xml")
+firstChild = xml.getChild("animal")
+xml.removeChild(firstChild)
+print(xml)
+# Sketch prints:
+# &lt;mammals&gt;
+#     &lt;animal id="1" species="Panthera pardus"&gt;Leopard&lt;/animal&gt;
+#     &lt;animal id="2" species="Equus zebra"&gt;Zebra&lt;/animal&gt;
+# &lt;/mammals&gt;
+]]></code>
+</example>
+
+<description><![CDATA[
+Removes the specified element.  First use <b>getChild()</b> to get a reference to the desired element.  Then pass that reference to <b>removeChild()</b> to delete it.
+]]></description>
+
+<syntax>
+.removeChild(kid)
+</syntax>
+
+
+</root>

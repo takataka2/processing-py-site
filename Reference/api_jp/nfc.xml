@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>nfc()</name>
+
+<category>Data</category>
+
+<subcategory>String Functions</subcategory>
+
+<type></type>
+
+<example>
+<code><![CDATA[
+i = 500000
+si = nfc(i)
+print(si)# Prints "500,000"
+f = 42525.34343
+fi = nfc(f, 2)
+print(fi)# Prints "42,525.34"
+]]></code>
+</example>
+
+<description><![CDATA[
+Utility function for formatting numbers into strings and placing appropriate commas to mark units of 1000. There are two versions: one for formatting ints, and one for formatting an array of ints. The value for the <b>right</b> parameter should always be a positive integer.
+<br/> <br/>
+For a non-US locale, this will insert periods instead of commas, or whatever is apprioriate for that region.
+]]></description>
+
+<syntax>
+nfc(<c>num</c>)
+nfc(<c>num</c>, <c>right</c>)
+</syntax>
+
+<parameter>
+<label>num</label>
+<description><![CDATA[the number(s) to format]]></description>
+</parameter>
+
+<parameter>
+<label>right</label>
+<description><![CDATA[int: number of digits to the right of the decimal point]]></description>
+</parameter>
+
+<related>nf</related>
+<related>nfp</related>
+
+</root>

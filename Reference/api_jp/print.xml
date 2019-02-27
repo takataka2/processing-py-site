@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>print()</name>
+
+<category>Output</category>
+
+<subcategory>Text Area</subcategory>
+
+<type></type>
+
+<example>
+<code><![CDATA[
+i = 123
+f = 45.6
+s = "this is a string"
+list_of_stuff = ["foo", "bar", "baz"]
+print(i)
+print(f)
+print(s)
+print(list_of_stuff)
+]]></code>
+</example>
+
+<description><![CDATA[
+	The <b>print()</b> function writes to the console area, the black rectangle at the bottom of the Processing environment. This function is often helpful for looking at the data a program is producing.<br/>
+<br />
+Using <b>print()</b> on an object will output a string representation of that object, as determined by its internal <b>__str__</b> and <b>__repr__</b> methods (<a href="http://stackoverflow.com/a/2626364">more information here</a>).<br/><br/>
+In Python Mode, <b>print()</b> and <b>println()</b> are functionally identical.
+]]></description>
+
+<syntax>
+print(<c>what</c>)
+</syntax>
+
+<parameter>
+<label>what</label>
+<description><![CDATA[data to print to console]]></description>
+</parameter>
+
+<related>PrintWriter_print</related>
+
+</root>

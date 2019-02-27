@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>.upper()</name>
+
+<category>Data</category>
+
+<subcategory>String Methods</subcategory>
+
+<usage></usage>
+
+<example>
+<code><![CDATA[
+message = 'Alpha bravo charlie delta'
+uppercase_message = message.upper()
+print(uppercase_message) # prints "ALPHA BRAVO CHARLIE DELTA"
+]]></code>
+</example>
+
+<description><![CDATA[
+Returns a copy of a string, with all lowercase characters converted to
+uppercase.
+]]></description>
+
+<syntax>
+	str.upper()
+</syntax>
+
+<parameter>
+	<label>str</label>
+	<description><![CDATA[String: any string of characters.]]></description>
+</parameter>
+
+<related>string</related>
+<related>string_formatting</related>
+<related>string_find</related>
+<related>string_strip</related>
+<related>string_join</related>
+<related>string_replace</related>
+<related>string_lower</related>
+
+<availability>1.0</availability>
+
+<type></type>
+
+<partof>PYDE</partof>
+
+</root>

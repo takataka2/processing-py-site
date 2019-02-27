@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+
+<name>getColumnCount()</name>
+
+<category>Table</category>
+
+<subcategory>Method</subcategory>
+
+<type>method</type>
+
+<example>
+<code><![CDATA[
+def setup():
+    table = Table()
+    print(table.getColumnCount())  # Prints 0
+    table.addColumn("name")
+    print(table.getColumnCount())  # Prints 1
+    table.addColumn("type")
+    print(table.getColumnCount())  # Prints 2
+]]></code>
+</example>
+
+<description><![CDATA[
+Returns the total number of columns in a table.
+]]></description>
+
+<syntax>.getColumnCount()</syntax>
+
+<related>Table_getRowCount</related>
+
+</root>

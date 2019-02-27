@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>pmouseY</name>
+
+<category>Input</category>
+
+<subcategory>Mouse</subcategory>
+
+<type>variable</type>
+
+<example>
+<noimage />
+<notest />
+<code><![CDATA[
+# Move the mouse quickly to see the difference
+# between the current and previous position
+def draw():
+    background(204)
+    line(20, mouseY, 80, pmouseY)
+    print("%d : %d" % (mouseX, pmouseY))
+]]></code>
+</example>
+
+<description><![CDATA[
+The system variable <b>pmouseY</b> always contains the vertical position of the mouse in the frame previous to the current frame.
+<br><br>
+For more detail on how <b>pmouseY</b> is updated inside of mouse events and <b>draw()</b>, see the reference for <b>pmouseX</b>.
+]]></description>
+
+<related>mouseX</related>
+<related>mouseY</related>
+<related>pmouseX</related>
+<related>mousePressed_var</related>
+<related>mousePressed</related>
+<related>mouseReleased</related>
+<related>mouseClicked</related>
+<related>mouseMoved</related>
+<related>mouseDragged</related>
+<related>mouseButton</related>
+<related>mouseWheel</related>
+
+</root>

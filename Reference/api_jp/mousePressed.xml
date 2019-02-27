@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>mousePressed()</name>
+
+<category>Input</category>
+
+<subcategory>Mouse</subcategory>
+
+<type>p5function</type>
+
+<example>
+<notest />
+<image />
+<code><![CDATA[
+# Click within the image to change 
+# the value of the rectangle
+
+value = 0
+
+def draw(): 
+    fill(value)
+    rect(25, 25, 50, 50)
+
+def mousePressed(): 
+    global value
+    if value == 0:
+        value = 255
+    else:
+        value = 0
+]]></code>
+</example>
+
+<description><![CDATA[
+The <b>mousePressed()</b> function is called once after every time a mouse button is pressed. The <b>mouseButton</b> variable (see the related reference entry) can be used to determine which button has been pressed.
+<br/><br/>
+Mouse and keyboard events only work when a program has <b>draw()</b>. Without <b>draw()</b>, the code is only run once and then stops listening for events.
+]]></description>
+
+<syntax>
+mousePressed()
+mousePressed(event)
+</syntax>
+
+<related>mouseX</related>
+<related>mouseY</related>
+<related>pmouseX</related>
+<related>pmouseY</related>
+<related>mousePressed_var</related>
+<related>mouseReleased</related>
+<related>mouseClicked</related>
+<related>mouseMoved</related>
+<related>mouseDragged</related>
+<related>mouseButton</related>
+<related>mouseWheel</related>
+
+</root>

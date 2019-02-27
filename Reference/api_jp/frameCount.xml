@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>frameCount</name>
+
+<category>Environment</category>
+
+<subcategory></subcategory>
+
+<type>variable</type>
+
+<example>
+<noimage />
+<notest />
+<code><![CDATA[
+def setup():
+    frameRate(30)
+
+def draw():
+    line(0, 0, width, height)
+    print(frameCount)
+]]></code>
+</example>
+
+<description><![CDATA[
+The system variable <b>frameCount</b> contains the number of frames that have been displayed since the program started. Inside <b>setup()</b> the value is 0, after the first iteration of draw it is 1, etc.
+]]></description>
+
+<related>frameRate</related>
+
+</root>

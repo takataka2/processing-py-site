@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>constrain()</name>
+
+<category>Math</category>
+
+<subcategory>Calculation</subcategory>
+
+<type></type>
+
+<example>
+<noimage />
+<code><![CDATA[
+print(constrain(55, 30, 70)) # Prints "55"
+print(constrain(100, 30, 70)) # Prints "70"
+print(constrain(-15, 30, 70)) # Prints "30"
+]]></code>
+</example>
+
+<description><![CDATA[
+Constrains a value to not exceed a maximum and minimum value.
+]]></description>
+
+<syntax>
+constrain(<c>amt</c>, <c>low</c>, <c>high</c>)
+</syntax>
+
+<parameter>
+<label>amt</label>
+<description><![CDATA[int, or float: the value to constrain]]></description>
+</parameter>
+
+<parameter>
+<label>low</label>
+<description><![CDATA[int, or float: minimum limit]]></description>
+</parameter>
+
+<parameter>
+<label>high</label>
+<description><![CDATA[int, or float: maximum limit]]></description>
+</parameter>
+
+<related>max</related>
+<related>min</related>
+
+</root>

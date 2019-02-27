@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+
+<name>binary()</name>
+
+<category>Data</category>
+
+<subcategory>Conversion</subcategory>
+
+<type></type>
+
+<example>
+<image />
+<code><![CDATA[
+c = color(255, 204, 0)
+print(c)             # Prints "-13312"
+print(binary(c))     # Prints "11111111111111111100110000000000"
+print(binary(c, 16)) # Prints "1100110000000000"
+]]></code>
+</example>
+
+
+<description><![CDATA[
+Converts a byte, char, int, or color to a String containing the equivalent binary notation. For example, the color value produced by <b>color(0, 102, 153, 255)</b> will convert to the String value "11111111000000000110011010011001". This function can help make your geeky debugging sessions much happier.<br/>
+<br/>
+Note that the maximum number of digits is 32, because an <b>int</b> value can only represent up to 32 bits. Specifying more than 32 digits will have no effect.
+]]></description>
+
+<syntax>
+binary(<c>value</c>)
+binary(<c>value</c>, <c>digits</c>)
+</syntax>
+
+<parameter>
+<label>value</label>
+<description><![CDATA[char, byte, or int: value to convert]]></description>
+</parameter>
+
+<parameter>
+<label>digits</label>
+<description><![CDATA[int: number of digits to return]]></description>
+</parameter>
+
+<related>unbinary</related>
+<related>hex</related>
+<related>unhex</related>
+
+</root>

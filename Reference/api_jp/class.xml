@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+    
+<name>class</name>
+
+<category>Structure</category>
+
+<subcategory></subcategory>
+
+<usage>Web &amp; Application</usage>
+    
+<example>
+<image />
+<code><![CDATA[
+class HLine(object):  # Class definition
+  def __init__(self, ypos, stroke_color):  # Object constructor
+    self.ypos = ypos
+    self.stroke_color = stroke_color
+
+  def display(self):  # Display method
+    stroke(self.stroke_color)
+    line(0, self.ypos, width, self.ypos)
+
+# Declare and construct two objects (h1 and h2) of the class HLine(object):
+h1 = HLine(20, 0)
+h2 = HLine(50, 255)
+
+background(127)
+h1.display()
+h2.display()
+]]></code>
+</example>
+    
+<description><![CDATA[
+Keyword used to indicate the declaration of a class. A class is a composite of fields (data) and methods (functions that are a part of the class) which may be instantiated as objects. The first letter of a class name is usually uppercase to separate it from other kinds of variables. In Python, instance variables are accessed via the <b>self</b> keyword.
+]]></description>
+
+<syntax>
+class <c>ClassName</c>(object):
+  <c>statements</c>
+</syntax>
+    
+<parameter>
+    <label>ClassName</label>
+    <description><![CDATA[Any valid variable name]]></description>
+</parameter>
+    
+<parameter>
+    <label>statements</label>
+    <description><![CDATA[List of statements]]></description>
+</parameter>
+    
+<returns></returns>
+
+<related>Object</related>
+
+<availability>1.0</availability>
+
+<partof>PYDE</partof>
+
+</root>

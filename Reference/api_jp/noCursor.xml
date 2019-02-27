@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<name>noCursor()</name>
+
+<category>Environment</category>
+
+<subcategory></subcategory>
+
+<type></type>
+
+<example>
+<noimage />
+<notest />
+<code><![CDATA[
+# Press the mouse to hide the cursor
+def draw(): 
+    if mousePressed == True:
+        noCursor()
+    else:
+        cursor(HAND)
+]]></code>
+</example>
+
+<description><![CDATA[
+Hides the cursor from view. Will not work when running the program in a web browser or in full screen (Present) mode.
+]]></description>
+
+<syntax>
+noCursor()
+</syntax>
+
+<related>cursor</related>
+
+</root>

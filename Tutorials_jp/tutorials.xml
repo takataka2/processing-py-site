@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- This file exists solely to establish the order of the tutorials on the output page -->
+<root>
+<tutorial>gettingstarted</tutorial>
+<tutorial>overview</tutorial>
+<tutorial>drawing</tutorial>
+<tutorial>color</tutorial>
+<tutorial>interactivity</tutorial>
+<tutorial>objects</tutorial>
+<tutorial>2dlists</tutorial>
+<tutorial>pixels</tutorial>
+<tutorial>text</tutorial>
+<tutorial>transform2d</tutorial>
+<tutorial>p3d</tutorial>
+<tutorial>anatomy</tutorial>
+<tutorial>command-line</tutorial>
+<tutorial>python-jython-java</tutorial>
+</root>
