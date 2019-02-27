@@ -22,7 +22,7 @@ rect(50, 15, 35, 70)
 </example>
 
 <description><![CDATA[
-Extracts the alpha value from a color.
+カラーからアルファ値を抽出します。
 ]]></description>
 
 <syntax>

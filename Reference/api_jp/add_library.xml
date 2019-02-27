@@ -22,8 +22,8 @@ line(0, height, width, 0)
 </example>
 
 <description><![CDATA[
-The keyword <b>add_library</b> is used to load a library into a Processing sketch. 
-A library is one or more classes that are grouped together to extend the capabilities of Processing. 
+<b> add_library </b>キーワードは、ライブラリをProcessingのスケッチに読み込むために使用されます。
+ライブラリーは、Processingの機能を拡張するためにグループ化された1つまたは複数のクラスです。
 ]]></description>
 
 <syntax>

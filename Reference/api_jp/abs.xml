@@ -18,7 +18,7 @@ d = abs(-9.23)# Sets 'd' to 9.23
 </example>
 
 <description><![CDATA[
-Calculates the absolute value (magnitude) of a number. The absolute value of a number is always positive.
+数値の絶対値（大きさ）を計算します。 数値の絶対値は常に正です。
 ]]></description>
 
 <syntax>

@@ -21,7 +21,7 @@ d += [4]  # Sets 'd' to [1,2,3,4]
 </example>
 
 <description><![CDATA[
-Combines addition with assignment for numbers, concatenation with assignment for strings, and list appending with assignment for lists. The expression <b>a += b</b> is equivalent to <b>a = a + b</b>. 
+加算と数値の割り当て、文字の連結と文字列の割り当て、およびリストの追加とリストの割り当てを組み合わせたものです。 <b>a += b</b>は、<b>a = a + b</b>と等しいです。
 ]]></description>
 
 <syntax>

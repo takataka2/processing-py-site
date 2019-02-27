@@ -36,7 +36,7 @@ print(sc1)  # Prints "Gorbachev1987"
 </example>
 
 <description><![CDATA[
-Adds two values or concatenates string values. As a mathematical operator, it calculates the sum of two values. As a string operator, it combines two strings into one. Note that for concatenation, non-string datatypes must be cast to strings using str(). 
+2つの値を加算するまたは文字列を連結します。数学演算子として、2つの値の合計を計算します。 文字列演算子として、2つの文字列を1つに結合します。 連結では、文字列以外のデータ型はstr()を使用して文字列にキャストする必要があります。
 ]]></description>
 
 <syntax>

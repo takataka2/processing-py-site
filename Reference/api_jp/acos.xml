@@ -29,7 +29,7 @@ print("%.6f : %.8f : %.7f" % (a, c, ac))
 </example>
 
 <description><![CDATA[
-The inverse of <b>cos()</b>, returns the arc cosine of a value. This function expects the values in the range of -1 to 1 and values are returned in the range <b>0</b> to <b>PI (3.1415927)</b>.
+<b> cos（）</b>の逆数、値のアークコサイン（逆コサイン）を返します。 この関数は、-1から1の範囲の引数を想定し、返り値は<b> 0 </b>から<b> PI（3.1415927）</b>の範囲で返されます。
 ]]></description>
 
 <syntax>
