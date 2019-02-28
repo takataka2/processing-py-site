@@ -31,11 +31,11 @@ background(img)
 </example>
 
 <description><![CDATA[
-The <b>background()</b> function sets the color used for the background of the Processing window. The default background is light gray. This function is typically used within <b>draw()</b> to clear the display window at the beginning of each frame, but it can be used inside <b>setup()</b> to set the background on the first frame of animation or if the backgound need only be set once.
+<b> background（）</b>関数は、処理ウィンドウの背景色を設定します。 デフォルトの背景は薄い灰色です。 この関数は通常、<b> draw（）</b>内で各フレームの先頭の表示ウィンドウをクリアするために使用されます。しかしアニメーションの最初のフレーム、または背景を一度だけ設定する必要がある場合、<b> setup（）</b>内で使用して背景色を設定することもできます。
 <br/> <br/>
-An image can also be used as the background for a sketch, although the image's width and height must match that of the sketch window. Images used with <b>background()</b> will ignore the current <b>tint()</b> setting. To resize an image to the size of the sketch window, use image.resize(width, height).
+イメージの幅と高さはスケッチウィンドウのものと一致する必要がありますが、イメージをスケッチの背景として使用することもできます。 <b> background（）</b>で使用されている画像は、現在の<b> tint（）</b>設定を無視します。 スケッチウィンドウのサイズに画像を変更するには、image.resize（width、height）を使用します。
 <br/> <br/>
-It is not possible to use the transparency <b>alpha</b> parameter with background colors on the main drawing surface. It can only be used along with a <b>PGraphics</b> object and <b>createGraphics()</b>.
+メインの描画面の背景色に透明度<b> alpha </b>パラメータを使用することはできません。 <b> PGraphics </b>オブジェクトと<b> createGraphics（）</b>を共に使用したときのみ可能です。
 ]]></description>
 
 <syntax>

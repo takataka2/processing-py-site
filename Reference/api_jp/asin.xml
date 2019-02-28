@@ -31,7 +31,7 @@ print("%.7f : %.8f : %.7f" % (a, s, arcsin))
 </example>
 
 <description><![CDATA[
-The inverse of <b>sin()</b>, returns the arc sine of a value. This function expects the values in the range of -1 to 1 and values are returned in the range <b>-PI/2</b> to <b>PI/2</b>.
+<b> sin（）</b>の逆数、アークサイン(逆サイン)を返します。 この関数は、-1から1の範囲の引数を想定し、返り値は<b> -PI / 2 </b>から<b> PI / 2 </b>の範囲で返されます。
 ]]></description>
 
 <syntax>

@@ -22,7 +22,7 @@ def draw():
 </example>
 
 <description><![CDATA[
-Calculates the angle (in radians) from a specified point to the coordinate origin as measured from the positive x-axis. Values are returned as a <b>float</b> in the range from <b>PI</b> to <b>-PI</b>. The <b>atan2()</b> function is most often used for orienting geometry to the position of the cursor.  Note: The y-coordinate of the point is the first parameter, and the x-coordinate is the second parameter, due the the structure of calculating the tangent.
+指定された点から座標原点までの角度を正のX軸から測定して（ラジアンで）計算します。 返り値は、<b> PI </b>から<b> -PI </b>までの範囲の<b> float </b>として返されます。 <b> atan2（）</b>関数は、平面図形をカーソルの位置に合わせるためによく使用されます。 注：タンジェント計算に合わせて、点のy座標が最初のパラメータ、x座標が2番目のパラメータになります。
 ]]></description>
 
 <syntax>

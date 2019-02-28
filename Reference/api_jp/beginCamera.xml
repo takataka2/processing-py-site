@@ -26,7 +26,9 @@ box(45)
 ]]></code></example>
 
 <description><![CDATA[
-The <b>beginCamera()</b> and <b>endCamera()</b> functions enable advanced customization of the camera space. The functions are useful if you want to have more control over camera movement, however for most users, the <b>camera()</b> function will be sufficient.<br /><br />The camera functions will replace any transformations (such as <b>rotate()</b> or <b>translate()</b>) that occur before them in <b>draw()</b>, but they will not automatically replace the camera transform itself. For this reason, camera functions should be placed at the beginning of <b>draw()</b> (so that transformations happen afterwards), and the <b>camera()</b> function can be used after <b>beginCamera()</b> if you want to reset the camera before applying transformations.<br /><br />This function sets the matrix mode to the camera matrix so calls such as <b>translate()</b>, <b>rotate()</b>, applyMatrix() and resetMatrix() affect the camera. <b>beginCamera()</b> should always be used with a following <b>endCamera()</b> and pairs of <b>beginCamera()</b> and <b>endCamera()</b> cannot be nested.
+<b> beginCamera（）</b>および<b> endCamera（）</b>関数を使用すると、カメラ空間を高度にカスタマイズできます。カメラの動きを細かく制御したい場合に便利ですが、ほとんどのユーザーにとっては<b> camera（）</b>関数で十分です。<br /> <br />カメラ関連の関数は<b> draw（）</b>の中で実行される前にほかの変換（<b> rotate（）</b>や<b> translate（）</b>など）を置き換えます。しかし、自動的にそれらの変換を置き換えるわけではありません。このため変換を適用する前にカメラをリセットしたい場合は、カメラ関連の関数を（後で変換が行われるように）<b> draw（）</b>の先頭に配置し、<b> beginCamera（）</b> の後に<b> camera（）</b>関数を使用できます。<br /> <br />
+この関数はマトリックスモードをカメラマトリックスに設定するので、<b> translate（）</b>、<b> rotate（）</b>、applyMatrix（）、resetMatrix（）などの呼び出しはカメラに影響します。
+<b> beginCamera（）</b>は、後に出てくる<b> endCamera（）</b>と<b> beginCamera（）</b>は組み合わせて使う必要があります。<b> beginCamera（）</b>と<b> endCamera（）</b>のペアはネストできません。
 ]]></description>
 
 <syntax>

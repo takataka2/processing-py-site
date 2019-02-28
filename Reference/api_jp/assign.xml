@@ -16,7 +16,7 @@ a = a + 40  # Assigns the value 70 to the variable 'a'
 </example>
 
 <description><![CDATA[
-Assigns a value to a variable. The "=" sign does not mean "equals", but is used to place data within a variable. The "=" operator is formally called the assignment operator. There are many different types of variables (int, floats, strings, etc.) and the assignment operator can only assign values which are the same type as the variable it is assigning. For example, if the variable is of type <b>int</b>, the value must also be an <b>int</b>.
+値を変数に割り当てます。 「=」記号は「等しい」を意味するのではなく、変数内にデータを入れるために使用されます。 "="演算子は正式には代入演算子と呼ばれます。 多くの異なる型の変数（int、float、文字列など）があり、代入演算子は代入している変数と同じ型の値しか代入できません。 たとえば、変数が<b> int </b>型の場合、値も<b> int </b>にする必要があります。
 ]]></description>
 
 <syntax>
@@ -30,7 +30,7 @@ Assigns a value to a variable. The "=" sign does not mean "equals", but is used 
 
 <parameter>
 <label>value</label>
-<description><![CDATA[any value of the same type as the variable. For example, if the variable is of type "int", the value must also be an int]]></description>
+<description><![CDATA[変数と同じ型の任意の値。 たとえば変数が "int"型の場合、値もint型でなければなりません。]]></description>
 </parameter>
 
 <returns></returns>
