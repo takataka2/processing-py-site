@@ -1,0 +1,7 @@
+{% extends "page_template_jp.jinja" %}
+
+{% block title %}{{ tutorial.title }} \ Tutorials{% endblock %}
+
+{% block content %}
+{{ convert_hypertext(tutorial.content) }}
+{% endblock %}

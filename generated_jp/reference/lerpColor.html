@@ -1,0 +1,112 @@
+<html lang="jp"><body><p>&gt; 
+    </p>
+        <title>lerpColor() \ Language (API)</title>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        
+        <meta name="Author" content="Casey Reas &amp; Ben Fry with Python Mode text by Miles Peyton, Allison Parrish, James Gilles, and Jonathan Feinberg">
+        <meta name="Publisher" content="Processing">
+        <meta name="Keywords" content="Processing, Processing, Interactive Media, Electronic Arts, Programming, Java, Ben Fry, Casey Reas, Python">
+        <meta name="Description" content="Python Mode for Processing extends the Processing Development Environment with the Python programming language.">
+        <meta name="Copyright" content="All contents copyright Ben Fry, Casey Reas,  MIT Media Laboratory, Miles Peyton, Allsion Parrish, James Gilles, Jonathan Feinberg, Golan Levin">
+        <script src="/javascript/modernizr-2.6.2.touch.js" type="text/javascript"></script>
+        <link href="/css/style.css" rel="stylesheet" type="text/css">
+    
+    
+        <div id="container">
+                        <div id="header">
+                <a href="/" title="Back to Python Mode" class="processing-logo no-cover"></a>
+            </div>
+            <a id="TOP" name="TOP"></a>
+            
+            
+            <div id="navigation">
+                <div class="navBar" id="mainnav">
+                    <a href="/">Cover</a><br>
+                    <a href="/reference/">Reference</a><br>
+                    <a href="/tutorials/">Tutorials</a><br>
+                    <a href="/examples/">Examples</a><br>
+                    <a href="https://github.com/jdf/Processing.py-Bugs/issues">Bugs</a>
+                </div>
+            </div>
+            
+
+            <div class="content">
+
+                <table cellpadding="0" cellspacing="0" border="0" class="ref-item">
+    <tr class="name-row">
+        <th scope="row">Name</th>
+        <td><h3>lerpColor()</h3></td>
+    </tr>
+
+            <tr class=""><th scope="row">Examples</th><td>
+                    <div class="example">                 <img src="/reference/imgs/lerpColor0.png">
+                <pre class="margin">
+stroke(255)
+background(51)
+fromC = color(204, 102, 0)
+toC = color(0, 102, 153)
+interA = lerpColor(fromC, toC, .33)
+interB = lerpColor(fromC, toC, .66)
+fill(fromC)
+rect(10, 20, 20, 60)
+fill(interA)
+rect(30, 20, 20, 60)
+fill(interB)
+rect(50, 20, 20, 60)
+fill(toC)
+rect(70, 20, 20, 60)
+</pre>
+            </div>
+                            </td></tr>
+    
+    <tr class="refchunk">
+        <th scope="row">Description</th>
+        <td>
+            
+Calculates a color or colors between two color at a specific increment. The <b>amt</b> parameter is the amount to interpolate between the two values where 0.0 equal to the first point, 0.1 is very near the first point, 0.5 is halfway in between, etc. 
+<br>
+An amount below 0 will be treated as 0. Likewise, amounts above 1 will be capped at 1. This is different from the behavior of lerp(), but necessary because otherwise numbers outside the range will produce strange and unexpected colors.
+
+        </td>
+    </tr>
+
+             <tr class="refchunk"><th scope="row">Syntax</th><td><pre>
+lerpColor(<kbd>c1</kbd>, <kbd>c2</kbd>, <kbd>amt</kbd>)
+</pre></td></tr>
+    
+            <tr class="refchunk"><th scope="row">Parameters</th><td><table cellpadding="0" cellspacing="0" border="0">                
+                    <tr class=""><th scope="row" class="code">c1</th><td>int: interpolate from this color</td></tr>
+                    <tr class=""><th scope="row" class="code">c2</th><td>int: interpolate to this color</td></tr>
+                    <tr class=""><th scope="row" class="code">amt</th><td>float: between 0.0 and 1.0</td></tr>
+                </table></td></tr>
+    
+    
+    
+    
+        <tr class="refchunk"><th scope="row">Related</th><td class="code">
+                    <a class="code" href="/reference/color.html">color()</a><br>
+                    <a class="code" href="/reference/PVector_lerp.html">lerp()</a><br>
+            </td></tr></table>
+
+Updated on Thu Feb 28 13:21:11 2019.
+
+                <!-- Creative Commons License -->
+                <div class="license">
+                    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border: none" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a>
+                </div>
+
+            </div>
+
+            <div id="footer">
+                <div id="copyright">Processing is an open project intiated by <a href="http://benfry.com/">Ben Fry</a> and <a href="http://reas.com">Casey Reas</a>. It is developed by a <a href="http://processing.org/about/people/">small team of volunteers</a>.</div>
+                <div id="colophon">
+                    <a href="/copyright.html">&#169; Info</a> 
+                    <span>Site hosted by <a href="http://www.mediatemple.net">Media Temple</a>.</span>
+                </div>
+            </div>
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="/javascript/jquery-1.9.1.min.js"><\/script>');</script>
+        <script src="/javascript/site.js" type="text/javascript"></script>
+    
+</body></html>

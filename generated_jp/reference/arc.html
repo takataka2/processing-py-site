@@ -1,0 +1,124 @@
+<html lang="jp"><body><p>&gt; 
+    </p>
+        <title>arc() \ Language (API)</title>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        
+        <meta name="Author" content="Casey Reas &amp; Ben Fry with Python Mode text by Miles Peyton, Allison Parrish, James Gilles, and Jonathan Feinberg">
+        <meta name="Publisher" content="Processing">
+        <meta name="Keywords" content="Processing, Processing, Interactive Media, Electronic Arts, Programming, Java, Ben Fry, Casey Reas, Python">
+        <meta name="Description" content="Python Mode for Processing extends the Processing Development Environment with the Python programming language.">
+        <meta name="Copyright" content="All contents copyright Ben Fry, Casey Reas,  MIT Media Laboratory, Miles Peyton, Allsion Parrish, James Gilles, Jonathan Feinberg, Golan Levin">
+        <script src="/javascript/modernizr-2.6.2.touch.js" type="text/javascript"></script>
+        <link href="/css/style.css" rel="stylesheet" type="text/css">
+    
+    
+        <div id="container">
+                        <div id="header">
+                <a href="/" title="Back to Python Mode" class="processing-logo no-cover"></a>
+            </div>
+            <a id="TOP" name="TOP"></a>
+            
+            
+            <div id="navigation">
+                <div class="navBar" id="mainnav">
+                    <a href="/">Cover</a><br>
+                    <a href="/reference/">Reference</a><br>
+                    <a href="/tutorials/">Tutorials</a><br>
+                    <a href="/examples/">Examples</a><br>
+                    <a href="https://github.com/jdf/Processing.py-Bugs/issues">Bugs</a>
+                </div>
+            </div>
+            
+
+            <div class="content">
+
+                <table cellpadding="0" cellspacing="0" border="0" class="ref-item">
+    <tr class="name-row">
+        <th scope="row">Name</th>
+        <td><h3>arc()</h3></td>
+    </tr>
+
+            <tr class=""><th scope="row">Examples</th><td>
+                    <div class="example">                 <img src="/reference/imgs/arc0.png">
+                <pre class="margin">
+arc(50, 55, 50, 50, 0, HALF_PI)
+noFill()
+arc(50, 55, 60, 60, HALF_PI, PI)
+arc(50, 55, 70, 70, PI, PI+QUARTER_PI)
+arc(50, 55, 80, 80, PI+QUARTER_PI, TWO_PI)
+</pre>
+            </div>
+                                <div class="example">                 <img src="/reference/imgs/arc1.png">
+                <pre class="margin">
+arc(50, 50, 80, 80, 0, PI+QUARTER_PI, OPEN)
+</pre>
+            </div>
+                                <div class="example">                 <img src="/reference/imgs/arc2.png">
+                <pre class="margin">
+arc(50, 50, 80, 80, 0, PI+QUARTER_PI, CHORD)
+</pre>
+            </div>
+                                <div class="example">                 <img src="/reference/imgs/arc3.png">
+                <pre class="margin">
+arc(50, 50, 80, 80, 0, PI+QUARTER_PI, PIE)
+</pre>
+            </div>
+                            </td></tr>
+    
+    <tr class="refchunk">
+        <th scope="row">Description</th>
+        <td>
+            
+&#12473;&#12463;&#12522;&#12540;&#12531;&#12395;&#24359;&#12434;&#25551;&#12365;&#12414;&#12377;&#12290; &#24359;&#12399;<b> a </b>&#12289;<b> b </b>&#12289;<b> c </b>&#12289;&#12362;&#12424;&#12403;<b> d </b>&#12497;&#12521;&#12513;&#12540;&#12479;&#12391;&#23450;&#32681;&#12373;&#12428;&#12383;&#26965;&#20870;&#12398;&#22806;&#32257;&#12395;&#27839;&#12387;&#12390;&#25551;&#30011;&#12373;&#12428;&#12414;&#12377;&#12290; &#12290; &#24359;&#12398;&#26965;&#20870;&#12398;&#21407;&#28857;&#12399;<b> ellipseMode()</b>&#38306;&#25968;&#12391;&#22793;&#26356;&#12391;&#12365;&#12414;&#12377;&#12290; &#24359;&#12434;&#25551;&#12367;&#35282;&#24230;&#65288;&#12521;&#12472;&#12450;&#12531;&#65289;&#12434;&#25351;&#23450;&#12377;&#12427;&#12395;&#12399;&#12289;<b> start </b>&#12362;&#12424;&#12403;<b> stop </b>&#12497;&#12521;&#12513;&#12540;&#12479;&#12434;&#20351;&#29992;&#12375;&#12414;&#12377;&#12290;
+<br>
+&#24359;&#12434;&#25551;&#12367;&#12395;&#12399;3&#12388;&#12398;&#26041;&#27861;&#12364;&#12354;&#12426;&#12414;&#12377;&#12290; &#20351;&#29992;&#12373;&#12428;&#12427;&#12524;&#12531;&#12480;&#12522;&#12531;&#12464;&#25163;&#27861;&#12399;&#12289;&#12458;&#12503;&#12471;&#12519;&#12531;&#12398;7&#30058;&#30446;&#12398;&#12497;&#12521;&#12513;&#12540;&#12479;&#12395;&#12424;&#12387;&#12390;&#23450;&#32681;&#12373;&#12428;&#12414;&#12377;&#12290; &#19978;&#35352;&#12398;&#20363;&#12395;&#31034;&#12373;&#12428;&#12390;&#12356;&#12427;3&#12388;&#12398;&#12458;&#12503;&#12471;&#12519;&#12531;&#12399;&#12289;PIE&#12289;OPEN&#12289;&#12362;&#12424;&#12403;CHORD&#12391;&#12377;&#12290; &#12487;&#12501;&#12457;&#12523;&#12488;&#12398;&#12514;&#12540;&#12489;&#12399;&#12289;PIE&#22615;&#12426;&#12398;OPEN&#12473;&#12488;&#12525;&#12540;&#12463;&#12391;&#12377;&#12290;
+
+        </td>
+    </tr>
+
+             <tr class="refchunk"><th scope="row">Syntax</th><td><pre>
+arc(<kbd>a</kbd>, <kbd>b</kbd>, <kbd>c</kbd>, <kbd>d</kbd>, <kbd>start</kbd>, <kbd>stop</kbd>)
+arc(<kbd>a</kbd>, <kbd>b</kbd>, <kbd>c</kbd>, <kbd>d</kbd>, <kbd>start</kbd>, <kbd>stop</kbd>, <kbd>mode</kbd>)
+</pre></td></tr>
+    
+            <tr class="refchunk"><th scope="row">Parameters</th><td><table cellpadding="0" cellspacing="0" border="0">                
+                    <tr class=""><th scope="row" class="code">a</th><td>float: x-coordinate of the arc's ellipse</td></tr>
+                    <tr class=""><th scope="row" class="code">b</th><td>float: y-coordinate of the arc's ellipse</td></tr>
+                    <tr class=""><th scope="row" class="code">c</th><td>float: width of the arc's ellipse by default</td></tr>
+                    <tr class=""><th scope="row" class="code">d</th><td>float: height of the arc's ellipse by default</td></tr>
+                    <tr class=""><th scope="row" class="code">start</th><td>float: angle to start the arc, specified in radians</td></tr>
+                    <tr class=""><th scope="row" class="code">stop</th><td>float: angle to stop the arc, specified in radians</td></tr>
+                </table></td></tr>
+    
+    
+    
+    
+        <tr class="refchunk"><th scope="row">Related</th><td class="code">
+                    <a class="code" href="/reference/ellipse.html">ellipse()</a><br>
+                    <a class="code" href="/reference/ellipseMode.html">ellipseMode()</a><br>
+                    <a class="code" href="/reference/radians.html">radians()</a><br>
+                    <a class="code" href="/reference/degrees.html">degrees()</a><br>
+            </td></tr></table>
+
+Updated on Thu Feb 28 13:21:11 2019.
+
+                <!-- Creative Commons License -->
+                <div class="license">
+                    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border: none" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a>
+                </div>
+
+            </div>
+
+            <div id="footer">
+                <div id="copyright">Processing is an open project intiated by <a href="http://benfry.com/">Ben Fry</a> and <a href="http://reas.com">Casey Reas</a>. It is developed by a <a href="http://processing.org/about/people/">small team of volunteers</a>.</div>
+                <div id="colophon">
+                    <a href="/copyright.html">&#169; Info</a> 
+                    <span>Site hosted by <a href="http://www.mediatemple.net">Media Temple</a>.</span>
+                </div>
+            </div>
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="/javascript/jquery-1.9.1.min.js"><\/script>');</script>
+        <script src="/javascript/site.js" type="text/javascript"></script>
+    
+</body></html>

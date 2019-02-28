@@ -1,0 +1,591 @@
+<html lang="jp"><body><p>&gt; 
+    </p>
+        <title>Reference</title>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        
+        <meta name="Author" content="Casey Reas &amp; Ben Fry with Python Mode text by Miles Peyton, Allison Parrish, James Gilles, and Jonathan Feinberg">
+        <meta name="Publisher" content="Processing">
+        <meta name="Keywords" content="Processing, Processing, Interactive Media, Electronic Arts, Programming, Java, Ben Fry, Casey Reas, Python">
+        <meta name="Description" content="Python Mode for Processing extends the Processing Development Environment with the Python programming language.">
+        <meta name="Copyright" content="All contents copyright Ben Fry, Casey Reas,  MIT Media Laboratory, Miles Peyton, Allsion Parrish, James Gilles, Jonathan Feinberg, Golan Levin">
+        <script src="/javascript/modernizr-2.6.2.touch.js" type="text/javascript"></script>
+        <link href="/css/style.css" rel="stylesheet" type="text/css">
+    
+    
+        <div id="container">
+                        <div id="header">
+                <a href="/" title="Back to Python Mode" class="processing-logo no-cover"></a>
+            </div>
+            <a id="TOP" name="TOP"></a>
+            
+            
+            <div id="navigation">
+                <div class="navBar" id="mainnav">
+                    <a href="/">Cover</a><br>
+                    <a href="/reference/">Reference</a><br>
+                    <a href="/tutorials/">Tutorials</a><br>
+                    <a href="/examples/">Examples</a><br>
+                    <a href="https://github.com/jdf/Processing.py-Bugs/issues">Bugs</a>
+                </div>
+            </div>
+            
+
+            <div class="content">
+
+                <h1 class="large-header"><span class="black">Processing.py Reference.</span> Processing is not a single programming language, but an arts-centric system for learning, teaching, and making visual form with code. This Reference documents its Python Mode.</h1>
+<div class="pyreference">
+            <div class="pycategory">
+        <h3>Structure</h3>
+                <h5></h5>
+                <ul>
+                <li><a href="/reference/comment.html"># (comment)</a></li>
+                <li><a href="/reference/multilinecomment.html">''' ''' (multiline comment)</a></li>
+                <li><a href="/reference/parentheses.html">() (parentheses)</a></li>
+                <li><a href="/reference/comma.html">, (comma)</a></li>
+                <li><a href="/reference/dot.html">. (dot)</a></li>
+                <li><a href="/reference/colon.html">: (Colon)</a></li>
+                <li><a href="/reference/assign.html">= (assign)</a></li>
+                <li><a href="/reference/False.html">False</a></li>
+                <li><a href="/reference/globals.html">Globals</a></li>
+                <li><a href="/reference/None.html">None</a></li>
+                <li><a href="/reference/slice.html">Slice</a></li>
+                <li><a href="/reference/string_formatting.html">String Formatting</a></li>
+                <li><a href="/reference/True.html">True</a></li>
+                <li><a href="/reference/indexbrackets.html">[] (Index brackets)</a></li>
+                <li><a href="/reference/add_library.html">add_library</a></li>
+                <li><a href="/reference/class.html">class</a></li>
+                <li><a href="/reference/def.html">def</a></li>
+                <li><a href="/reference/del.html">del</a></li>
+                <li><a href="/reference/draw.html">draw()</a></li>
+                <li><a href="/reference/except.html">except</a></li>
+                <li><a href="/reference/exit.html">exit()</a></li>
+                <li><a href="/reference/in.html">in</a></li>
+                <li><a href="/reference/len.html">len()</a></li>
+                <li><a href="/reference/loop.html">loop()</a></li>
+                <li><a href="/reference/noLoop.html">noLoop()</a></li>
+                <li><a href="/reference/pass.html">pass</a></li>
+                <li><a href="/reference/popStyle.html">popStyle()</a></li>
+                <li><a href="/reference/pushStyle.html">pushStyle()</a></li>
+                <li><a href="/reference/range.html">range()</a></li>
+                <li><a href="/reference/redraw.html">redraw()</a></li>
+                <li><a href="/reference/return.html">return</a></li>
+                <li><a href="/reference/setup.html">setup()</a></li>
+                <li><a href="/reference/super.html">super</a></li>
+                <li><a href="/reference/try.html">try</a></li>
+                <li><a href="/reference/curlybraces.html">{} (Curly braces)</a></li>
+                </ul>
+                </div>
+                <div class="pycategory">
+        <h3>Environment</h3>
+                <ul>
+                <li><a href="/reference/cursor.html">cursor()</a></li>
+                <li><a href="/reference/displayHeight.html">displayHeight</a></li>
+                <li><a href="/reference/displayWidth.html">displayWidth</a></li>
+                <li><a href="/reference/focused.html">focused</a></li>
+                <li><a href="/reference/frameCount.html">frameCount</a></li>
+                <li><a href="/reference/frameRate_var.html">frameRate</a></li>
+                <li><a href="/reference/frameRate.html">frameRate()</a></li>
+                <li><a href="/reference/fullScreen.html">fullScreen()</a></li>
+                <li><a href="/reference/height.html">height</a></li>
+                <li><a href="/reference/noCursor.html">noCursor()</a></li>
+                <li><a href="/reference/size.html">size()</a></li>
+                <li><a href="/reference/width.html">width</a></li>
+                </ul>
+                </div>
+                <div class="pycategory">
+        <h3>Data</h3>
+                    <h5>Primitive</h5>
+                <ul>
+                <li><a href="/reference/Boolean.html">Boolean</a></li>
+                <li><a href="/reference/float.html">float</a></li>
+                <li><a href="/reference/int.html">int</a></li>
+                </ul>
+                    <h5>Composite</h5>
+                <ul>
+                <li><a href="/reference/dictionary.html">Dictionary</a></li>
+                <li><a href="/reference/Object.html">Object</a></li>
+                <li><a href="/reference/tuple.html">Tuple</a></li>
+                <li><a href="/reference/string.html">string</a></li>
+                </ul>
+                    <h5>Conversion</h5>
+                <ul>
+                <li><a href="/reference/binary.html">binary()</a></li>
+                <li><a href="/reference/floatconvert.html">float()</a></li>
+                <li><a href="/reference/hex.html">hex()</a></li>
+                <li><a href="/reference/intconvert.html">int()</a></li>
+                <li><a href="/reference/list.html">list()</a></li>
+                <li><a href="/reference/strconvert.html">str()</a></li>
+                <li><a href="/reference/unbinary.html">unbinary()</a></li>
+                <li><a href="/reference/unhex.html">unhex()</a></li>
+                </ul>
+                    <h5>Dictionary Methods</h5>
+                <ul>
+                <li><a href="/reference/dict_items.html">.items()</a></li>
+                <li><a href="/reference/dict_iteritems.html">.iteritems()</a></li>
+                <li><a href="/reference/dict_keys.html">.keys()</a></li>
+                <li><a href="/reference/dict_update.html">.update()</a></li>
+                <li><a href="/reference/dict_values.html">.values()</a></li>
+                </ul>
+                    <h5>List Methods</h5>
+                <ul>
+                <li><a href="/reference/list_append.html">.append()</a></li>
+                <li><a href="/reference/list_extend.html">.extend()</a></li>
+                <li><a href="/reference/list_index.html">.index()</a></li>
+                <li><a href="/reference/list_insert.html">.insert()</a></li>
+                <li><a href="/reference/list_pop.html">.pop()</a></li>
+                <li><a href="/reference/list_remove.html">.remove()</a></li>
+                <li><a href="/reference/list_reverse.html">.reverse()</a></li>
+                <li><a href="/reference/list_sort.html">.sort()</a></li>
+                </ul>
+                    <h5>String Methods</h5>
+                <ul>
+                <li><a href="/reference/string_find.html">.find()</a></li>
+                <li><a href="/reference/string_join.html">.join()</a></li>
+                <li><a href="/reference/string_lower.html">.lower()</a></li>
+                <li><a href="/reference/string_replace.html">.replace()</a></li>
+                <li><a href="/reference/string_split.html">.split()</a></li>
+                <li><a href="/reference/string_startswith.html">.startswith()</a></li>
+                <li><a href="/reference/string_strip.html">.strip()</a></li>
+                <li><a href="/reference/string_upper.html">.upper()</a></li>
+                </ul>
+                    <h5>List Functions</h5>
+                <ul>
+                <li><a href="/reference/reversed.html">reversed()</a></li>
+                <li><a href="/reference/sorted.html">sorted()</a></li>
+                </ul>
+                    <h5>String Functions</h5>
+                <ul>
+                <li><a href="/reference/match.html">match()</a></li>
+                <li><a href="/reference/matchAll.html">matchAll()</a></li>
+                <li><a href="/reference/nf.html">nf()</a></li>
+                <li><a href="/reference/nfc.html">nfc()</a></li>
+                <li><a href="/reference/nfp.html">nfp()</a></li>
+                <li><a href="/reference/nfs.html">nfs()</a></li>
+                </ul>
+                </div>
+                <div class="pycategory">
+        <h3>Control</h3>
+                    <h5>Relational Operators</h5>
+                <ul>
+                <li><a href="/reference/inequality.html">!= (inequality)</a></li>
+                <li><a href="/reference/lessthan.html">&lt; (less than)</a></li>
+                <li><a href="/reference/lessthanorequalto.html">&lt;= (less than or equal to)</a></li>
+                <li><a href="/reference/equality.html">== (equality)</a></li>
+                <li><a href="/reference/greaterthan.html">&gt; (greater than)</a></li>
+                <li><a href="/reference/greaterthanorequalto.html">&gt;= (greater than or equal to)</a></li>
+                </ul>
+                    <h5>Iteration</h5>
+                <ul>
+                <li><a href="/reference/for.html">for</a></li>
+                <li><a href="/reference/while.html">while</a></li>
+                </ul>
+                    <h5>Conditionals</h5>
+                <ul>
+                <li><a href="/reference/conditional.html">Conditional Expressions</a></li>
+                <li><a href="/reference/break.html">break</a></li>
+                <li><a href="/reference/continue.html">continue</a></li>
+                <li><a href="/reference/else.html">else</a></li>
+                <li><a href="/reference/if.html">if</a></li>
+                </ul>
+                    <h5>Logical Operators</h5>
+                <ul>
+                <li><a href="/reference/logicalAND.html">&amp;&amp; (logical AND)</a></li>
+                <li><a href="/reference/logicalNOT.html">not (logical NOT)</a></li>
+                <li><a href="/reference/logicalOR.html">or (logical OR)</a></li>
+                </ul>
+                </div>
+                <div class="pycategory">
+        <h3>Shape</h3>
+                    <h5></h5>
+                <ul>
+                <li><a href="/reference/createShape.html">createShape()</a></li>
+                </ul>
+                    <h5>2D Primitives</h5>
+                <ul>
+                <li><a href="/reference/arc.html">arc()</a></li>
+                <li><a href="/reference/ellipse.html">ellipse()</a></li>
+                <li><a href="/reference/line.html">line()</a></li>
+                <li><a href="/reference/point.html">point()</a></li>
+                <li><a href="/reference/quad.html">quad()</a></li>
+                <li><a href="/reference/rect.html">rect()</a></li>
+                <li><a href="/reference/triangle.html">triangle()</a></li>
+                </ul>
+                    <h5>Curves</h5>
+                <ul>
+                <li><a href="/reference/bezier.html">bezier()</a></li>
+                <li><a href="/reference/bezierDetail.html">bezierDetail()</a></li>
+                <li><a href="/reference/bezierPoint.html">bezierPoint()</a></li>
+                <li><a href="/reference/bezierTangent.html">bezierTangent()</a></li>
+                <li><a href="/reference/curve.html">curve()</a></li>
+                <li><a href="/reference/curveDetail.html">curveDetail()</a></li>
+                <li><a href="/reference/curvePoint.html">curvePoint()</a></li>
+                <li><a href="/reference/curveTangent.html">curveTangent()</a></li>
+                <li><a href="/reference/curveTightness.html">curveTightness()</a></li>
+                </ul>
+                    <h5>3D Primitives</h5>
+                <ul>
+                <li><a href="/reference/box.html">box()</a></li>
+                <li><a href="/reference/sphere.html">sphere()</a></li>
+                <li><a href="/reference/sphereDetail.html">sphereDetail()</a></li>
+                </ul>
+                    <h5>Attributes</h5>
+                <ul>
+                <li><a href="/reference/ellipseMode.html">ellipseMode()</a></li>
+                <li><a href="/reference/noSmooth.html">noSmooth()</a></li>
+                <li><a href="/reference/rectMode.html">rectMode()</a></li>
+                <li><a href="/reference/smooth.html">smooth()</a></li>
+                <li><a href="/reference/strokeCap.html">strokeCap()</a></li>
+                <li><a href="/reference/strokeJoin.html">strokeJoin()</a></li>
+                <li><a href="/reference/strokeWeight.html">strokeWeight()</a></li>
+                </ul>
+                    <h5>Vertex</h5>
+                <ul>
+                <li><a href="/reference/beginContour.html">beginContour()</a></li>
+                <li><a href="/reference/beginShape.html">beginShape()</a></li>
+                <li><a href="/reference/bezierVertex.html">bezierVertex()</a></li>
+                <li><a href="/reference/curveVertex.html">curveVertex()</a></li>
+                <li><a href="/reference/endContour.html">endContour()</a></li>
+                <li><a href="/reference/endShape.html">endShape()</a></li>
+                <li><a href="/reference/quadraticVertex.html">quadraticVertex()</a></li>
+                <li><a href="/reference/texture.html">texture()</a></li>
+                <li><a href="/reference/textureMode.html">textureMode()</a></li>
+                <li><a href="/reference/vertex.html">vertex()</a></li>
+                </ul>
+                    <h5>Loading &amp; Displaying</h5>
+                <ul>
+                <li><a href="/reference/loadShape.html">loadShape()</a></li>
+                <li><a href="/reference/shape.html">shape()</a></li>
+                <li><a href="/reference/shapeMode.html">shapeMode()</a></li>
+                </ul>
+                </div>
+                <div class="pycategory">
+        <h3>Input</h3>
+                    <h5>Mouse</h5>
+                <ul>
+                <li><a href="/reference/mouseButton.html">mouseButton</a></li>
+                <li><a href="/reference/mouseClicked.html">mouseClicked()</a></li>
+                <li><a href="/reference/mouseDragged.html">mouseDragged()</a></li>
+                <li><a href="/reference/mouseMoved.html">mouseMoved()</a></li>
+                <li><a href="/reference/mousePressed_var.html">mousePressed</a></li>
+                <li><a href="/reference/mousePressed.html">mousePressed()</a></li>
+                <li><a href="/reference/mouseReleased.html">mouseReleased()</a></li>
+                <li><a href="/reference/mouseWheel.html">mouseWheel()</a></li>
+                <li><a href="/reference/mouseX.html">mouseX</a></li>
+                <li><a href="/reference/mouseY.html">mouseY</a></li>
+                <li><a href="/reference/pmouseX.html">pmouseX</a></li>
+                <li><a href="/reference/pmouseY.html">pmouseY</a></li>
+                </ul>
+                    <h5>Keyboard</h5>
+                <ul>
+                <li><a href="/reference/key.html">key</a></li>
+                <li><a href="/reference/keyCode.html">keyCode</a></li>
+                <li><a href="/reference/keyPressed_var.html">keyPressed</a></li>
+                <li><a href="/reference/keyPressed.html">keyPressed()</a></li>
+                <li><a href="/reference/keyReleased.html">keyReleased()</a></li>
+                <li><a href="/reference/keyTyped.html">keyTyped()</a></li>
+                </ul>
+                    <h5>Files</h5>
+                <ul>
+                <li><a href="/reference/createReader.html">createReader()</a></li>
+                <li><a href="/reference/loadBytes.html">loadBytes()</a></li>
+                <li><a href="/reference/loadStrings.html">loadStrings()</a></li>
+                <li><a href="/reference/selectFolder.html">selectFolder()</a></li>
+                <li><a href="/reference/selectInput.html">selectInput()</a></li>
+                </ul>
+                    <h5>Time &amp; Date</h5>
+                <ul>
+                <li><a href="/reference/day.html">day()</a></li>
+                <li><a href="/reference/hour.html">hour()</a></li>
+                <li><a href="/reference/millis.html">millis()</a></li>
+                <li><a href="/reference/minute.html">minute()</a></li>
+                <li><a href="/reference/month.html">month()</a></li>
+                <li><a href="/reference/second.html">second()</a></li>
+                <li><a href="/reference/year.html">year()</a></li>
+                </ul>
+                </div>
+                <div class="pycategory">
+        <h3>Output</h3>
+                    <h5>Text Area</h5>
+                <ul>
+                <li><a href="/reference/print.html">print()</a></li>
+                <li><a href="/reference/println.html">println()</a></li>
+                </ul>
+                    <h5>Image</h5>
+                <ul>
+                <li><a href="/reference/save.html">save()</a></li>
+                <li><a href="/reference/saveFrame.html">saveFrame()</a></li>
+                </ul>
+                    <h5>Files</h5>
+                <ul>
+                <li><a href="/reference/beginRaw.html">beginRaw()</a></li>
+                <li><a href="/reference/createWriter.html">createWriter()</a></li>
+                <li><a href="/reference/endRaw.html">endRaw()</a></li>
+                <li><a href="/reference/saveBytes.html">saveBytes()</a></li>
+                <li><a href="/reference/saveStrings.html">saveStrings()</a></li>
+                <li><a href="/reference/selectOutput.html">selectOutput()</a></li>
+                </ul>
+                </div>
+                <div class="pycategory">
+        <h3>Transform</h3>
+                    <h5></h5>
+                <ul>
+                <li><a href="/reference/applyMatrix.html">applyMatrix()</a></li>
+                <li><a href="/reference/popMatrix.html">popMatrix()</a></li>
+                <li><a href="/reference/printMatrix.html">printMatrix()</a></li>
+                <li><a href="/reference/pushMatrix.html">pushMatrix()</a></li>
+                <li><a href="/reference/resetMatrix.html">resetMatrix()</a></li>
+                <li><a href="/reference/rotate.html">rotate()</a></li>
+                <li><a href="/reference/rotateX.html">rotateX()</a></li>
+                <li><a href="/reference/rotateY.html">rotateY()</a></li>
+                <li><a href="/reference/rotateZ.html">rotateZ()</a></li>
+                <li><a href="/reference/scale.html">scale()</a></li>
+                <li><a href="/reference/shearX.html">shearX()</a></li>
+                <li><a href="/reference/shearY.html">shearY()</a></li>
+                <li><a href="/reference/translate.html">translate()</a></li>
+                </ul>
+                </div>
+                <div class="pycategory">
+        <h3>Lights, Camera</h3>
+                    <h5>Lights</h5>
+                <ul>
+                <li><a href="/reference/ambientLight.html">ambientLight()</a></li>
+                <li><a href="/reference/directionalLight.html">directionalLight()</a></li>
+                <li><a href="/reference/lightFalloff.html">lightFalloff()</a></li>
+                <li><a href="/reference/lightSpecular.html">lightSpecular()</a></li>
+                <li><a href="/reference/lights.html">lights()</a></li>
+                <li><a href="/reference/noLights.html">noLights()</a></li>
+                <li><a href="/reference/normal.html">normal()</a></li>
+                <li><a href="/reference/pointLight.html">pointLight()</a></li>
+                <li><a href="/reference/spotLight.html">spotLight()</a></li>
+                </ul>
+                    <h5>Camera</h5>
+                <ul>
+                <li><a href="/reference/beginCamera.html">beginCamera()</a></li>
+                <li><a href="/reference/camera.html">camera()</a></li>
+                <li><a href="/reference/endCamera.html">endCamera()</a></li>
+                <li><a href="/reference/frustum.html">frustum()</a></li>
+                <li><a href="/reference/ortho.html">ortho()</a></li>
+                <li><a href="/reference/perspective.html">perspective()</a></li>
+                <li><a href="/reference/printCamera.html">printCamera()</a></li>
+                <li><a href="/reference/printProjection.html">printProjection()</a></li>
+                </ul>
+                    <h5>Coordinates</h5>
+                <ul>
+                <li><a href="/reference/modelX.html">modelX()</a></li>
+                <li><a href="/reference/modelY.html">modelY()</a></li>
+                <li><a href="/reference/modelZ.html">modelZ()</a></li>
+                <li><a href="/reference/screenX.html">screenX()</a></li>
+                <li><a href="/reference/screenY.html">screenY()</a></li>
+                <li><a href="/reference/screenZ.html">screenZ()</a></li>
+                </ul>
+                    <h5>Material Properties</h5>
+                <ul>
+                <li><a href="/reference/ambient.html">ambient()</a></li>
+                <li><a href="/reference/emissive.html">emissive()</a></li>
+                <li><a href="/reference/shininess.html">shininess()</a></li>
+                <li><a href="/reference/specular.html">specular()</a></li>
+                </ul>
+                </div>
+                <div class="pycategory">
+        <h3>Color</h3>
+                    <h5>Setting</h5>
+                <ul>
+                <li><a href="/reference/background.html">background()</a></li>
+                <li><a href="/reference/clear.html">clear()</a></li>
+                <li><a href="/reference/colorMode.html">colorMode()</a></li>
+                <li><a href="/reference/fill.html">fill()</a></li>
+                <li><a href="/reference/noFill.html">noFill()</a></li>
+                <li><a href="/reference/noStroke.html">noStroke()</a></li>
+                <li><a href="/reference/stroke.html">stroke()</a></li>
+                </ul>
+                    <h5>Creating &amp; Reading</h5>
+                <ul>
+                <li><a href="/reference/alpha.html">alpha()</a></li>
+                <li><a href="/reference/blendColor.html">blendColor()</a></li>
+                <li><a href="/reference/blue.html">blue()</a></li>
+                <li><a href="/reference/brightness.html">brightness()</a></li>
+                <li><a href="/reference/color.html">color()</a></li>
+                <li><a href="/reference/green.html">green()</a></li>
+                <li><a href="/reference/hue.html">hue()</a></li>
+                <li><a href="/reference/lerpColor.html">lerpColor()</a></li>
+                <li><a href="/reference/red.html">red()</a></li>
+                <li><a href="/reference/saturation.html">saturation()</a></li>
+                </ul>
+                </div>
+                <div class="pycategory">
+        <h3>Image</h3>
+                    <h5></h5>
+                <ul>
+                <li><a href="/reference/PImage.html">PImage</a></li>
+                <li><a href="/reference/createImage.html">createImage()</a></li>
+                </ul>
+                    <h5>Loading &amp; Displaying</h5>
+                <ul>
+                <li><a href="/reference/image.html">image()</a></li>
+                <li><a href="/reference/imageMode.html">imageMode()</a></li>
+                <li><a href="/reference/loadImage.html">loadImage()</a></li>
+                <li><a href="/reference/noTint.html">noTint()</a></li>
+                <li><a href="/reference/requestImage.html">requestImage()</a></li>
+                <li><a href="/reference/tint.html">tint()</a></li>
+                </ul>
+                    <h5>Textures</h5>
+                <ul>
+                <li><a href="/reference/textureWrap.html">textureWrap()</a></li>
+                </ul>
+                    <h5>Pixels</h5>
+                <ul>
+                <li><a href="/reference/blend.html">blend()</a></li>
+                <li><a href="/reference/copy.html">copy()</a></li>
+                <li><a href="/reference/filter.html">filter()</a></li>
+                <li><a href="/reference/get.html">get()</a></li>
+                <li><a href="/reference/loadPixels.html">loadPixels()</a></li>
+                <li><a href="/reference/pixels.html">pixels</a></li>
+                <li><a href="/reference/set.html">set()</a></li>
+                <li><a href="/reference/updatePixels.html">updatePixels()</a></li>
+                </ul>
+                </div>
+                <div class="pycategory">
+        <h3>Rendering</h3>
+                    <h5></h5>
+                <ul>
+                <li><a href="/reference/PGraphics.html">PGraphics</a></li>
+                <li><a href="/reference/blendMode.html">blendMode()</a></li>
+                <li><a href="/reference/clip.html">clip()</a></li>
+                <li><a href="/reference/createGraphics.html">createGraphics()</a></li>
+                <li><a href="/reference/noClip.html">noClip()</a></li>
+                </ul>
+                    <h5>Shaders</h5>
+                <ul>
+                <li><a href="/reference/PShader.html">PShader</a></li>
+                <li><a href="/reference/loadShader.html">loadShader()</a></li>
+                <li><a href="/reference/resetShader.html">resetShader()</a></li>
+                <li><a href="/reference/shader.html">shader()</a></li>
+                </ul>
+                </div>
+                <div class="pycategory">
+        <h3>Typography</h3>
+                    <h5></h5>
+                <ul>
+                <li><a href="/reference/PFont.html">PFont</a></li>
+                </ul>
+                    <h5>Loading &amp; Displaying</h5>
+                <ul>
+                <li><a href="/reference/createFont.html">createFont()</a></li>
+                <li><a href="/reference/loadFont.html">loadFont()</a></li>
+                <li><a href="/reference/text.html">text()</a></li>
+                <li><a href="/reference/textFont.html">textFont()</a></li>
+                </ul>
+                    <h5>Attributes</h5>
+                <ul>
+                <li><a href="/reference/textAlign.html">textAlign()</a></li>
+                <li><a href="/reference/textLeading.html">textLeading()</a></li>
+                <li><a href="/reference/textMode.html">textMode()</a></li>
+                <li><a href="/reference/textSize.html">textSize()</a></li>
+                <li><a href="/reference/textWidth.html">textWidth()</a></li>
+                </ul>
+                    <h5>Metrics</h5>
+                <ul>
+                <li><a href="/reference/textAscent.html">textAscent()</a></li>
+                <li><a href="/reference/textDescent.html">textDescent()</a></li>
+                </ul>
+                </div>
+                <div class="pycategory">
+        <h3>Math</h3>
+                    <h5>Operators</h5>
+                <ul>
+                <li><a href="/reference/modulo.html">% (modulo)</a></li>
+                <li><a href="/reference/multiply.html">* (multiply)</a></li>
+                <li><a href="/reference/multiplyassign.html">*= (multiply assign)</a></li>
+                <li><a href="/reference/addition.html">+ (addition)</a></li>
+                <li><a href="/reference/addassign.html">+= (add assign)</a></li>
+                <li><a href="/reference/minus.html">- (minus)</a></li>
+                <li><a href="/reference/subtractassign.html">-= (subtract assign)</a></li>
+                <li><a href="/reference/divide.html">/ (divide)</a></li>
+                <li><a href="/reference/divideassign.html">/= (divide assign)</a></li>
+                </ul>
+                    <h5>Bitwise Operators</h5>
+                <ul>
+                <li><a href="/reference/bitwiseAND.html">&amp; (bitwise AND)</a></li>
+                <li><a href="/reference/leftshift.html">&lt;&lt; (left shift)</a></li>
+                <li><a href="/reference/rightshift.html">&gt;&gt; (right shift)</a></li>
+                <li><a href="/reference/bitwiseOR.html">| (bitwise OR)</a></li>
+                </ul>
+                    <h5>Calculation</h5>
+                <ul>
+                <li><a href="/reference/abs.html">abs()</a></li>
+                <li><a href="/reference/ceil.html">ceil()</a></li>
+                <li><a href="/reference/constrain.html">constrain()</a></li>
+                <li><a href="/reference/dist.html">dist()</a></li>
+                <li><a href="/reference/exp.html">exp()</a></li>
+                <li><a href="/reference/floor.html">floor()</a></li>
+                <li><a href="/reference/lerp.html">lerp()</a></li>
+                <li><a href="/reference/log.html">log()</a></li>
+                <li><a href="/reference/mag.html">mag()</a></li>
+                <li><a href="/reference/map.html">map()</a></li>
+                <li><a href="/reference/max.html">max()</a></li>
+                <li><a href="/reference/min.html">min()</a></li>
+                <li><a href="/reference/norm.html">norm()</a></li>
+                <li><a href="/reference/pow.html">pow()</a></li>
+                <li><a href="/reference/round.html">round()</a></li>
+                <li><a href="/reference/sq.html">sq()</a></li>
+                <li><a href="/reference/sqrt.html">sqrt()</a></li>
+                </ul>
+                    <h5>PVector</h5>
+                <ul>
+                <li><a href="/reference/PVector.html">PVector</a></li>
+                </ul>
+                    <h5>Trigonometry</h5>
+                <ul>
+                <li><a href="/reference/acos.html">acos()</a></li>
+                <li><a href="/reference/asin.html">asin()</a></li>
+                <li><a href="/reference/atan.html">atan()</a></li>
+                <li><a href="/reference/atan2.html">atan2()</a></li>
+                <li><a href="/reference/cos.html">cos()</a></li>
+                <li><a href="/reference/degrees.html">degrees()</a></li>
+                <li><a href="/reference/radians.html">radians()</a></li>
+                <li><a href="/reference/sin.html">sin()</a></li>
+                <li><a href="/reference/tan.html">tan()</a></li>
+                </ul>
+                    <h5>Random</h5>
+                <ul>
+                <li><a href="/reference/noise.html">noise()</a></li>
+                <li><a href="/reference/noiseDetail.html">noiseDetail()</a></li>
+                <li><a href="/reference/noiseSeed.html">noiseSeed()</a></li>
+                <li><a href="/reference/random.html">random()</a></li>
+                <li><a href="/reference/randomGaussian.html">randomGaussian()</a></li>
+                <li><a href="/reference/randomSeed.html">randomSeed()</a></li>
+                </ul>
+                </div>
+                <div class="pycategory">
+        <h3>Constants</h3>
+                    <h5></h5>
+                <ul>
+                <li><a href="/reference/HALF_PI.html">HALF_PI (1.57079...)</a></li>
+                <li><a href="/reference/PI.html">PI (3.14159...)</a></li>
+                <li><a href="/reference/QUARTER_PI.html">QUARTER_PI (0.78539...)</a></li>
+                <li><a href="/reference/TAU.html">TAU (6.28318...)</a></li>
+                <li><a href="/reference/TWO_PI.html">TWO_PI (6.28318...)</a></li>
+                </ul>
+                    </div>
+    </div>
+
+                <!-- Creative Commons License -->
+                <div class="license">
+                    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border: none" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a>
+                </div>
+
+            </div>
+
+            <div id="footer">
+                <div id="copyright">Processing is an open project intiated by <a href="http://benfry.com/">Ben Fry</a> and <a href="http://reas.com">Casey Reas</a>. It is developed by a <a href="http://processing.org/about/people/">small team of volunteers</a>.</div>
+                <div id="colophon">
+                    <a href="/copyright.html">&#169; Info</a> 
+                    <span>Site hosted by <a href="http://www.mediatemple.net">Media Temple</a>.</span>
+                </div>
+            </div>
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="/javascript/jquery-1.9.1.min.js"><\/script>');</script>
+        <script src="/javascript/site.js" type="text/javascript"></script>
+    
+</body></html>
