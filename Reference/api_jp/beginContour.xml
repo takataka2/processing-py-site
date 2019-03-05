@@ -26,18 +26,19 @@ vertex(-40, 40)
 # Interior part of shape
 beginContour()
 vertex(-20, -20)
-vertex(20, -20)
-vertex(20, 20)
 vertex(-20, 20)
+vertex(20, 20)
+vertex(20, -20)
 endContour()
 endShape(CLOSE)
 ]]></code>
 </example>
 
 <description><![CDATA[
-Use the <b>beginContour()</b> and <b>endContour()</b> function to create negative shapes within shapes. For instance, the center of the letter 'O'. <b>beginContour()</b> begins recording vertices for the shape and <b>endContour()</b> stops recording. These functions can only be within a <b>beginShape()</b>/<b>endShape()</b> pair and they only work with the P2D and P3D renderers. <br />
-<br/>
-Transformations such as <b>translate()</b>, <b>rotate()</b>, and <b>scale()</b> do not work within a <b>beginContour()</b>/<b>endContour()</b> pair. It is also not possible to use other shapes, such as <b>ellipse()</b> or <b>rect()</b> within.
+図形内にネガティブな図形を作成する、つまり「穴空き」のある図形を作るには、<b> beginContour（）</b>関数と<b> endContour（）</b>関数を使用します。 たとえば、文字「O」の中心です。 <b> beginContour（）</b>は形状の頂点の記録を開始し、<b> endContour（）</b>は記録を停止します。 これらの関数は<b> beginShape（）</b> / <b> endShape（）</b>のペア内にのみ存在でき、それらはP2DおよびP3Dレンダラーでのみ機能します。 <br />
+外枠の図形ついては頂点を時計回りに、内側の図形ついては頂点を反時計回りに設定する必要があります。
+<br/> <br/>
+<b> translate（）</b>、<b> rotate（）</b>、<b> scale（）</b>などの変換は、<b> beginContour（）</ b > / <b> endContour（）</b>のペア内では機能しません。 内部で<b> ellipse（）</b>や<b> rect（）</b>などの他の形状を使用することもできません。
 ]]></description>
 
 <syntax>
