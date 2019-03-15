@@ -30,9 +30,9 @@ def mousePressed():
 </example>
 
 <description><![CDATA[
-Opens a new file and all subsequent drawing functions are echoed to this file as well as the display window. The <b>beginRecord()</b> function requires two parameters, the first is the renderer and the second is the file name. This function is always used with <b>endRecord()</b> to stop the recording process and close the file.
+新しいファイルが開き、それ以降のすべての描画内容がこのファイルと表示ウィンドウに反映されます。 <b> beginRecord()</b>関数には2つのパラメータが必要です。1つ目はレンダラー、2つ目はファイル名です。 この関数は、記録処理を停止してファイルを閉じるために、<b> endRecord()</b>と共に常に使います。。
 <br /> <br />
-Note that beginRecord() will only pick up any settings that happen after it has been called. For instance, if you call textFont() before beginRecord(), then that font will not be set for the file that you're recording to. 
+beginRecord（）は、呼び出された後に発生した設定のみを取得します。 たとえば、beginRecord（）の前にtextFont（）を呼び出すと、そのフォントは記録しているファイルに設定されません。
 ]]></description>
 
 <syntax>
