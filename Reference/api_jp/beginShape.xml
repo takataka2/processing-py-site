@@ -165,6 +165,12 @@ Using the <b>beginShape()</b> and <b>endShape()</b> functions allow creating mor
 Transformations such as <b>translate()</b>, <b>rotate()</b>, and <b>scale()</b> do not work within <b>beginShape()</b>. It is also not possible to use other shapes, such as <b>ellipse()</b> or <b>rect()</b> within <b>beginShape()</b>. 
 <br/><br/>
 The P3D renderer settings allow <b>stroke()</b> and <b>fill()</b> settings to be altered per-vertex, but P2D and the default renderer do not. Settings such as <b>strokeWeight()</b>, <b>strokeCap()</b>, and <b>strokeJoin()</b> cannot be changed while inside a <b>beginShape()</b>/<b>endShape()</b> block with any renderer.
+
+<b> beginShape()</b>関数と<b> endShape()</b>関数を使用すると、より複雑な形を作成できます。 <b> beginShape()</b>は図形の頂点の記録を開始し、<b> endShape()</b>は記録を停止します。 <b> kind </b>パラメータの値は、提供された頂点からどのタイプの形状を作成するかを指定します。モードを指定しないと、形状は不規則な多角形になります。 beginShape()で使用可能なパラメータは、POINTS、LINES、TRIANGLES、TRIANGLE_FAN、TRIANGLE_STRIP、QUADS、およびQUAD_STRIPです。 <b> beginShape()</b>関数を呼び出した後、一連の<b> vertex()</b>コマンドを続ける必要があります。図形の描画を中止するには、<b> endShape()</b>を呼び出します。 2つのパラメータを指定した<b> vertex()</b>関数は2次元での位置を指定し、3つのパラメータを指定した<b> vertex()</b>関数は3Dでの位置を指定します。各図形は現在の線の色で輪郭が描かれ、塗りつぶしの色で塗りつぶされます。
+<br/> <br/>
+<b> translate()</b>、<b> rotate()</b>、<b> scale()</b>などの変換は、<b> beginShape()</b>内では機能しません。 <b> beginShape()</b>内に<b> ellipse()</b>や<b> rect()</b>などを使用することもできません。
+<br/> <br/>
+P3Dレンダラー設定では、<b> stroke()</b>および<b> fill()</b>設定を頂点ごとに変更できますが、P2Dおよびデフォルトのレンダラーでは変更できません。 <b> beginShape()内では、<b> strokeWeight()</b>、<b> strokeCap()</b>、<b> strokeJoin()</b>などの設定を変更することはできません。</ b> / <b> endShape()</b>ブロックを任意のレンダラで
 ]]></description>
 
 <syntax>
